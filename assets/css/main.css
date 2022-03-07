@@ -2125,6 +2125,13 @@ input:focus::placeholder, textarea:focus::placeholder {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.sd-section-title.sd-teaching-title {
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 65px;
+}
 
 .sd-donate-support-content p {
   font-family: Quicksand;
@@ -2309,9 +2316,15 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-bottom: 250px;
 }
 
+.sd-handcover-book-img {
+  float: left;
+}
 .sd-handcover-book-box {
+  overflow: hidden;
   position: relative;
   background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+  border-radius: 40px;
 }
 .sd-handcover-book-box > * {
   position: relative;
@@ -2321,6 +2334,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   content: "";
   position: absolute;
   top: 0;
+  border-radius: 40px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2335,6 +2349,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: relative;
   border-radius: 0 10px 10px 0px;
   overflow: hidden;
+  position: absolute;
+  top: 45px;
+  left: 0;
 }
 .sd-handcover-book-box-title-bg::before {
   background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
@@ -2361,6 +2378,72 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 0;
   padding: 0 50px;
   line-height: 78px;
+}
+.sd-handcover-book-content {
+  overflow: hidden;
+}
+.sd-handcover-book-content-box-wrap {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  padding: 50px 70px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sd-handcover-book-content-title {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+.sd-handcover-book-content-text {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.sd-handcover-book-content-title-top {
+  margin-bottom: 18px;
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 65px;
+  color: #FFFFFF;
+}
+
+.handcover-negative-space {
+  margin-top: -255px;
+}
+
+.sd-teaching-book-container {
+  border-radius: 40px 0px 0px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+}
+
+.sd-teaching-move-space {
+  margin-right: -11px;
+  margin-left: auto;
+  max-width: 1545px;
+}
+
+.teaching-book-list-active img {
+  max-width: 235px !important;
+}
+
+.teaching-book-list-active {
+  transform: translateX(80px);
+}
+
+.book-footer-negative-space {
+  margin-top: -385px;
+  padding-top: 565px;
 }
 
 /*# sourceMappingURL=main.css.map */

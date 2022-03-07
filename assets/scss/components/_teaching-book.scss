@@ -1,0 +1,24 @@
+.sd-teaching-book {
+	&-container {
+	    border-radius: 40px 0px 0px 40px;
+	    background: rgba(255, 255, 255, 0.1);
+	    backdrop-filter: blur(140px);
+	}
+}
+.sd-teaching-move-space {
+    margin-right: -11px;
+    margin-left: auto;
+    max-width: 1545px;
+}
+.teaching-book-list-active {
+	& img {
+	    max-width: 235px !important;
+	}
+}
+.teaching-book-list-active {
+    transform: translateX(80px);
+}
+.book-footer-negative-space {
+	margin-top: -385px;
+    padding-top: 565px;
+}

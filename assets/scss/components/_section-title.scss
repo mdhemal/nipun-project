@@ -12,5 +12,12 @@
 	    -webkit-text-fill-color: transparent;
 	    background-clip: text;
 	    -webkit-text-fill-color: transparent;
+	    &.sd-teaching-title {
+	    	font-family: $cormorant;
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 54px;
+		    line-height: 65px;
+	    }
 	}
 }
