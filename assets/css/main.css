@@ -1961,6 +1961,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .sd-rounded-btn.h-40 {
   height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  min-width: 175px;
 }
 .sd-rounded-btn:hover {
   color: #fff;
@@ -2304,6 +2307,39 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .pb-250 {
   padding-bottom: 250px;
+}
+
+.sd-handcover-book-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sd-handcover-book-box > * {
+  position: relative;
+  z-index: 9;
+}
+.sd-handcover-book-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1px;
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.sd-handcover-book-section-title {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
