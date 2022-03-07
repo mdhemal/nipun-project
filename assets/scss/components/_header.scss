@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+.sd-header {
+	&-logo {
+		& img {
+		    max-width: 46px;
+		}
+	}
+	&-nav {
+		& ul {
+			text-align: center;
+			& li {
+				list-style-type: none;
+				display: inline-block;
+				margin: 0 39px;
+				& a {
+					font-size: 16px;
+				    font-weight: 500;
+				    color: #fff;
+				    text-decoration: none;
+				    display: inline-block;
+				    padding: 50px 0;
+				    line-height: 1;
+				    font-family: $quicksand;
+				    position: relative;
+				    &::after {
+				    	width: 0;
+				    	height: 6px;
+				    	background-image: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+				    	content: "";
+				    	position: absolute;
+				    	right: 0;
+				    	bottom: 0;
+				    	transition: all .3s;
+				    }
+				    &:hover {
+					    &::after {
+						    width: 100%;
+						    right: auto;
+						    left: 0;
+					    }
+				    }
+				}
+				&.active {
+					& a {
+						&::after{
+							left: 50%;
+							transform: translateX(-50%);
+							right: auto;
+							width:100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.sd-header-social a {
+    display: inline-block;
+    margin-left: 23px;
+}
+.header-area {
+	position: relative;
+	background-color: rgba(0,0,0,0.07);
+}
+.header-transparent {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}

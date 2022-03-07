@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+.sd-testimonial {
+	&-content {
+	    font-family: $cormorant;
+	    font-style: normal;
+	    font-weight: 500;
+	    font-size: 27px;
+	    line-height: 33px;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+	&-author {
+		display: block;
+		text-transform: uppercase;
+		font-family: $cormorant;
+	    font-style: normal;
+	    font-weight: 500;
+	    font-size: 27px;
+	    line-height: 33px;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+	&-content-wrap {
+		& .quote-left {
+	        left: -43px;
+		    position: absolute;
+		    top: -37px;
+		}
+		& .quote-right {
+			position: absolute;
+		    bottom: -72px;
+		    right: -47px;
+		}
+	}
+}
+.pb-545 {
+	padding-bottom: 545px;
+}
+.sd-testimonial-overlay {
+	position: relative;
+	& > * {
+		position: relative;
+		z-index: 3;
+	}
+	&::after {
+		left: 0;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 620px;
+		background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(36, 25, 58, 0) 0.01%, rgba(36, 25, 58, 0.47) 34.99%, rgba(36, 25, 58, 0.97) 73.18%, #24193A 100%);
+		transform: matrix(1, 0, 0, -1, 0, 0);
+		content: "";
+	}
+}

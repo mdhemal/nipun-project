@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+
+.transmission-space-negative {
+    margin-top: -292px;
+}
+.transmission-space-negative {
+    margin-top: -292px;
+}
+.pt-530 {
+    padding-top: 530px;
+}
+.sd-transmission {
+    &-text {
+        font-family: $quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+}
+.pb-330 {
+    padding-bottom: 330px;
+}
+.transmission-cloud-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.single-transmission-gallery {
+    text-align: center;
+    & img {
+        width: 430px;
+        height: 403px;
+        display: inline-block;
+        object-fit: cover;
+    }
+}
+.slick-active {
+    & .single-transmission-gallery {
+        & img {
+            width: 423px;
+            height: 439px;
+        }
+    }
+}
+.slick-active.slick-center {
+    & .single-transmission-gallery {
+        & img {
+            width: 570px;
+            height: 597px;
+        }
+    }
+}
+.sd-transmission-gallery-active {
+    & .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+.sd-transmission-gallery {
+    & .slick-initialized .slick-slide {
+        display: block;
+        margin: 0 15px;
+    }    
+}
+.sd-transmission-gallery.fix {
+    min-height: 597px;
+}
