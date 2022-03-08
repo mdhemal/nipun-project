@@ -64,6 +64,10 @@ $("[data-bg-color]").each(function(){
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
         slidesPerView: 6,
         spaceBetween: 45,
+         navigation: {
+		    nextEl: '.swiper-book-next',
+		    prevEl: '.swiper-book-prev',
+		  },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

@@ -3,6 +3,7 @@
 	    border-radius: 40px 0px 0px 40px;
 	    background: rgba(255, 255, 255, 0.1);
 	    backdrop-filter: blur(140px);
+        border: 1px solid #B59A48;
 	}
 }
 .sd-teaching-move-space {
@@ -11,8 +12,32 @@
     max-width: 1545px;
 }
 .teaching-book-list-active {
-	& img {
-	    max-width: 235px !important;
+	& a {
+		position: relative;
+		display: inline-block;
+		&::after {
+		    position: absolute;
+		    left: 50%;
+		    top: 49%;
+		    transition: all .3s;
+		    width: 81%;
+		    height: 86%;
+		    background-color: rgba(0, 0, 0, 0.6);
+		    content: "";
+		    border-radius: 0;
+		    opacity: 0;
+		    visibility: hidden;
+		    transform: translate(-50%, -50%);
+		    transform-origin: center;
+		}
+		&:hover::after {
+			opacity: 1;
+			visibility: visible;
+		}
+		& img {
+		    max-width: 235px !important;
+		    border-radius: 10px;
+		}
 	}
 }
 .teaching-book-list-active {
@@ -21,4 +46,12 @@
 .book-footer-negative-space {
 	margin-top: -385px;
     padding-top: 565px;
+}
+.sd-teaching-arrow-float {
+	float: right;
+	padding-right: 60px;
+	padding-top: 30px;
+}
+.pb-240 {
+	padding-bottom: 240px;
 }
