@@ -12,6 +12,18 @@
 				list-style-type: none;
 				display: inline-block;
 				margin: 0 39px;
+				@media #{$xxxl} {
+					margin: 0 37px;
+				}
+				@media #{$xxl} {
+					margin: 0 24px;
+				}
+				@media #{$xl} {
+					margin: 0 15px;
+				}
+				@media #{$lg} {
+					margin: 0 7px;
+				}
 				& a {
 					font-size: 16px;
 				    font-weight: 500;
@@ -22,6 +34,12 @@
 				    line-height: 1;
 				    font-family: $quicksand;
 				    position: relative;
+				    @media #{$xl} {
+				    	font-size: 14px;
+				    }
+				    @media #{$lg} {
+				    	font-size: 13px;
+				    }
 				    &::after {
 				    	width: 0;
 				    	height: 6px;
@@ -57,6 +75,12 @@
 .sd-header-social a {
     display: inline-block;
     margin-left: 23px;
+    @media #{$xl} {
+    	margin-left: 21px;
+    }
+    @media #{$lg} {
+    	margin-left: 6px;
+    }
 }
 .header-area {
 	position: relative;
@@ -68,4 +92,7 @@
 	top: 0;
 	right: 0;
 	z-index: 3;
+}
+.sd-header-social a:first-child {
+	margin-left: 0;
 }

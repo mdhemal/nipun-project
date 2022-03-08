@@ -17,6 +17,9 @@
 		    display: block;
 		    text-align:center;
 	    }
+	    @media #{$lg} {
+	    	font-size: 72px;
+	    }
 	}
 	&-title-label {
         color: #fff;

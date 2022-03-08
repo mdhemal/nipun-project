@@ -25,11 +25,25 @@
 	        left: -43px;
 		    position: absolute;
 		    top: -37px;
+		    @media #{$xl} {
+		    	left: -23px;
+				top: -57px;
+		    }
+		    @media #{$lg} {
+		    	left: -13px;
+				top: -57px;
+		    }
 		}
 		& .quote-right {
 			position: absolute;
 		    bottom: -72px;
 		    right: -47px;
+		    @media #{$xl} {
+		    	right: -17px;
+		    }
+		    @media #{$lg} {
+		    	right: -7px;
+		    }
 		}
 	}
 }

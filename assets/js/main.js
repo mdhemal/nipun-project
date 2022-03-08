@@ -42,6 +42,15 @@ $("[data-bg-color]").each(function(){
 	  spaceBetween: 30,
 	  responsive: [
 	    {
+	      breakpoint: 1399,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '150px',
+	        slidesToShow: 3
+	      }
+	    },
+	    ,{
 	      breakpoint: 768,
 	      settings: {
 	        arrows: false,

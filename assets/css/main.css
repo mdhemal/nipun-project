@@ -1735,6 +1735,26 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
   margin: 0 39px;
 }
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .sd-header-nav ul li {
+    margin: 0 37px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .sd-header-nav ul li {
+    margin: 0 24px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-header-nav ul li {
+    margin: 0 15px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-header-nav ul li {
+    margin: 0 7px;
+  }
+}
 .sd-header-nav ul li a {
   font-size: 16px;
   font-weight: 500;
@@ -1745,6 +1765,16 @@ input:focus::placeholder, textarea:focus::placeholder {
   line-height: 1;
   font-family: "Quicksand", sans-serif;
   position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-header-nav ul li a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-header-nav ul li a {
+    font-size: 13px;
+  }
 }
 .sd-header-nav ul li a::after {
   width: 0;
@@ -1772,6 +1802,16 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
   margin-left: 23px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-header-social a {
+    margin-left: 21px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-header-social a {
+    margin-left: 6px;
+  }
+}
 
 .header-area {
   position: relative;
@@ -1784,6 +1824,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   top: 0;
   right: 0;
   z-index: 3;
+}
+
+.sd-header-social a:first-child {
+  margin-left: 0;
 }
 
 /*
@@ -1931,6 +1975,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 .sd-slide-title span {
   display: block;
   text-align: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-slide-title {
+    font-size: 72px;
+  }
 }
 .sd-slide-title-label {
   color: #fff;
@@ -2127,10 +2176,32 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: absolute;
   top: -37px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-testimonial-content-wrap .quote-left {
+    left: -23px;
+    top: -57px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-testimonial-content-wrap .quote-left {
+    left: -13px;
+    top: -57px;
+  }
+}
 .sd-testimonial-content-wrap .quote-right {
   position: absolute;
   bottom: -72px;
   right: -47px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-testimonial-content-wrap .quote-right {
+    right: -17px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-testimonial-content-wrap .quote-right {
+    right: -7px;
+  }
 }
 
 .pb-545 {
@@ -2212,6 +2283,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 .donate-support-move-space {
   margin-left: calc(100% - 1188px);
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .donate-support-move-space {
+    margin-left: calc(100% - 1129px);
+  }
+}
 
 .transmission-overlay {
   position: relative;
@@ -2267,20 +2343,33 @@ input:focus::placeholder, textarea:focus::placeholder {
   text-align: center;
 }
 .single-transmission-gallery img {
-  width: 430px;
   height: 403px;
   display: inline-block;
   object-fit: cover;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .single-transmission-gallery img {
+    height: 233px;
+  }
+}
 
 .slick-active .single-transmission-gallery img {
-  width: 423px;
+  max-width: 100%;
   height: 439px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slick-active .single-transmission-gallery img {
+    height: 300px;
+  }
 }
 
 .slick-active.slick-center .single-transmission-gallery img {
-  width: 570px;
   height: 597px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .slick-active.slick-center .single-transmission-gallery img {
+    height: 387px;
+  }
 }
 
 .sd-transmission-gallery-active .slick-track {
@@ -2294,6 +2383,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .sd-transmission-gallery.fix {
+  min-height: 597px;
+}
+
+.sd-transmission-gallery-active {
   min-height: 597px;
 }
 
@@ -2357,6 +2450,18 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .pb-250 {
   padding-bottom: 250px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .about-content-section-title-area.pt-295 {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .sd-transmission-gallery.fix.pb-130 {
+    padding-bottom: 0;
+  }
 }
 
 .sd-handcover-book-img {

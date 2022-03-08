@@ -61,3 +61,13 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 .pb-250 {
     padding-bottom: 250px;
 }
+.about-content-section-title-area.pt-295 {
+	@media #{$xl} {
+		padding-top: 0;
+	}
+}
+.sd-transmission-gallery.fix.pb-130 {
+	@media #{$xl} {
+		padding-bottom: 0;
+	}
+}
