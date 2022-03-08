@@ -1,8 +1,14 @@
 @use '../abstracts/variables' as *;
 .sd-handcover-book {
+	&-img {
+		float: left;
+	}
 	&-box {
+		overflow: hidden;
 	    position: relative;
 	    background-color: rgba(255,255,255,.1);
+	    backdrop-filter: blur(140px);
+	    border-radius: 40px;
 	    & > * {
 	    	position: relative;
 	    	z-index: 9;
@@ -11,6 +17,7 @@
     	    content: "";
 		    position: absolute;
 		    top: 0;
+		    border-radius: 40px;
 		    left: 0;
 		    right: 0;
 		    bottom: 0;
@@ -25,6 +32,9 @@
 	    	position: relative;
 			border-radius: 0 10px 10px 0px;
 			overflow: hidden;
+			position: absolute;
+			top: 45px;
+			left: 0;
 	    	&::before {
 	    		background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
 				transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -52,5 +62,72 @@
 	    margin-bottom: 0;
 	    padding: 0 50px;
 	    line-height: 78px;
+	}
+	&-content {
+		overflow: hidden;
+		&-box-wrap {
+			background: rgba(255, 255, 255, 0.15);
+		    border-radius: 40px;
+		    padding: 50px 70px;
+		    border-top-right-radius: 0;
+		    border-bottom-right-radius: 0;
+		}
+		&-title {
+			font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 21px;
+		    line-height: 26px;
+		    margin-bottom: 15px;
+		    color: #FFFFFF;
+		}
+		&-text {
+		    font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: normal;
+		    font-size: 17px;
+		    line-height: 21px;
+		    color: #FFFFFF;
+		}
+		&-title-top {
+			margin-bottom: 18px;
+			font-family: $cormorant;
+		    font-style: normal;
+		    text-align: center;
+		    font-weight: 500;
+		    font-size: 54px;
+		    line-height: 65px;
+		    color: #FFFFFF;
+		}
+	}
+}
+.handcover-negative-space {
+	margin-top: -255px;
+	z-index: 3;
+    position: relative;
+}
+.sd-journy-social {
+	&-icon-box {
+		box-shadow: inset 0px 4px 4px rgb(0 0 0 / 55%);
+	    backdrop-filter: blur(100px);
+	    width: 156px;
+	    height: 156px;
+	    display: inline-block;
+	    line-height: 156px;
+	    text-align: center;
+	    border-radius: 50%;
+	    margin-bottom: 30px;
+	    &-title {
+	    	font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 18px;
+		    line-height: 22px;
+		    text-align: center;
+		    color: #FFFFFF;
+		    & a {
+		    	text-decoration: none;
+		    }
+	    }
 	}
 }

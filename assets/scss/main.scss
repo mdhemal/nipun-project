@@ -4,8 +4,7 @@
 @forward  './abstracts/common';
 @forward './components/header';
 @forward './components/section_title';
-@forward './components/back-to-top.scss';
-@forward './components/footer';
+@forward './components/back-to-top';
 @forward './components/slider';
 @forward './components/service';
 @forward './components/testimonial';
@@ -15,3 +14,5 @@
 @forward './components/about';
 @forward './components/handcover-book';
 @forward './components/slider-main';
+@forward './components/teaching-book';
+@forward './components/footer';
