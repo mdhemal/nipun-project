@@ -70,6 +70,32 @@ $("[data-bg-color]").each(function(){
 	    }
 	  ]
 	});
+
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        slidesPerView: 2,
+        freeMode: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".sd-slider-main-thumb-navigation-next",
+          prevEl: ".sd-slider-main-thumb-navigation-prev",
+        },
+        pagination: {
+          el: ".sd-slider-main-pagination",
+          clickable: true,
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
         slidesPerView: 6,
         spaceBetween: 45,
@@ -82,4 +108,6 @@ $("[data-bg-color]").each(function(){
           clickable: true,
         },
     });
+
+    
 })(jQuery);
