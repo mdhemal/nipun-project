@@ -26,6 +26,21 @@
 		    text-decoration: none;
 	    }
 	}
+
+	@media #{$xs} {
+		&-icon {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 8px;
+
+			svg {
+				max-height: 60%;
+			}
+		}
+		&-title {
+			font-size: 15px;
+		}
+	}
 }
 .t-s-wrapper-bg {
 	position: relative;

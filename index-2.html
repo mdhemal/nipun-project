@@ -28,16 +28,16 @@
     <body>
 
         <!-- header area start -->
-        <header class="header-area header-transparent">
+        <header class="header-area header-transparent d-flex align-items-center" style="min-height: 100px;">
             <div class="container container-full">
                 <div class="header-area">
                     <div class="row align-items-center">
-                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-auto">
                             <div class="sd-header-logo">
                                 <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xxl-8 col-xl-8 col-lg-8">
+                        <div class="col-xxl-8 col-xl-8 col-lg-8 d-none d-lg-block">
                             <div class="sd-header-nav">
                                 <nav>
                                     <ul>
@@ -50,11 +50,12 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xxl-2 col-xl-2 col-lg-2">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col">
                             <div class="sd-header-social text-end">
                                 <a href="#" class="sd-header-social-link"><img src="assets/img/icon/social-3.png" alt="img not found"></a>
                                 <a href="#" class="sd-header-social-link"><img src="assets/img/icon/social-2.png" alt="img not found"></a>
                                 <a href="#" class="sd-header-social-link"><img src="assets/img/icon/social-1.png" alt="img not found"></a>
+                                <a href="#" class="sd-header-social-link d-lg-none fs-4"><i class="fas fa-bars"></i></a>
                             </div>
                         </div>
                     </div>
@@ -90,8 +91,8 @@
                     <!-- service area start -->
                     <div class="service-area service-negative-space">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-xxl col-xl-3 col-lg-4 mb-20 mb-xxl-0">
+                            <div class="row row-cols-xl-3 row-cols-lg-4 row-cols-2">
+                                <div class="col mb-20 mb-xxl-0">
                                     <div class="sd-single-service text-center">
                                         <div class="sd-single-service-icon">
                                             <svg width="66" height="78" viewBox="0 0 66 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +110,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl col-xl-3 col-lg-4 mb-20 mb-xxl-0">
+                                <div class="col mb-20 mb-xxl-0">
                                     <div class="sd-single-service text-center">
                                         <div class="sd-single-service-icon">
                                             <svg width="66" height="78" viewBox="0 0 66 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +159,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl col-xl-3 col-lg-4 mb-20 mb-xxl-0">
+                                <div class="col mb-20 mb-xxl-0">
                                     <div class="sd-single-service text-center">
                                         <div class="sd-single-service-icon">
                                             <svg width="66" height="84" viewBox="0 0 66 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,7 +182,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl col-xl-3 col-lg-4 mb-20 mb-xxl-0">
+                                <div class="col mb-20 mb-xxl-0">
                                     <div class="sd-single-service text-center">
                                         <div class="sd-single-service-icon">
                                             <svg width="66" height="78" viewBox="0 0 66 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +215,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xxl col-xl-3 col-lg-4 mb-20 mb-xxl-0">
+                                <div class="col mb-20 mb-xxl-0">
                                     <div class="sd-single-service text-center">
                                         <div class="sd-single-service-icon">
                                             <svg width="75" height="60" viewBox="0 0 75 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +243,7 @@
                             <div class="sd-testimonial-content-wrap p-rel">
                                 <div class="sd-testimonial-quote">
                                     <div class="quote-left">
-                                        <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="1em" height="1em" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.3268 23.6883C13.2412 23.6883 14.7302 24.2597 15.7938 25.4026C16.9637 26.5455 17.5486 28 17.5486 29.7662C17.5486 33.9221 15.1025 36 10.2101 36C7.01945 36 4.5201 34.8571 2.71206 32.5714C0.904021 30.1818 0 26.8052 0 22.4416C0 18.2857 0.957199 14.4416 2.8716 10.9091C4.78599 7.27273 7.60441 3.68832 11.3268 0.155851C11.4332 0.0519505 11.5927 0 11.8054 0C12.1245 0 12.3904 0.155845 12.6031 0.467536C12.8158 0.779226 12.8158 1.03897 12.6031 1.24676C7.3917 6.44156 4.78599 12.5714 4.78599 19.6364C4.78599 22.5455 5.31777 24.6753 6.38132 26.026C7.33852 24.4675 8.98703 23.6883 11.3268 23.6883ZM34.7782 23.6883C36.6926 23.6883 38.1816 24.2597 39.2451 25.4026C40.415 26.5455 41 28 41 29.7662C41 33.9221 38.5538 36 33.6615 36C30.4708 36 27.9715 34.8571 26.1634 32.5714C24.3554 30.1818 23.4514 26.8052 23.4514 22.4416C23.4514 18.2857 24.4086 14.4416 26.323 10.9091C28.2374 7.27273 31.0558 3.68832 34.7782 0.155851C34.8846 0.0519505 35.0441 0 35.2568 0C35.5759 0 35.8418 0.155845 36.0545 0.467536C36.2672 0.779226 36.2672 1.03897 36.0545 1.24676C30.8431 6.44156 28.2374 12.5714 28.2374 19.6364C28.2374 22.5455 28.7691 24.6753 29.8327 26.026C30.7899 24.4675 32.4384 23.6883 34.7782 23.6883Z" fill="url(#paint0_linear_303_307)"/>
                                             <defs>
                                             <linearGradient id="paint0_linear_303_307" x1="6.53437" y1="-31.2" x2="56.5152" y2="-1.65946" gradientUnits="userSpaceOnUse">
@@ -253,7 +254,7 @@
                                         </svg>
                                     </div>
                                     <div class="quote-right">
-                                        <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="1em" height="1em" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M29.6732 12.3117C27.7588 12.3117 26.2698 11.7403 25.2062 10.5974C24.0363 9.45454 23.4514 8 23.4514 6.23376C23.4514 2.07792 25.8975 -1.3203e-06 30.7899 -8.92597e-07C33.9805 -6.1366e-07 36.4799 1.14286 38.2879 3.42857C40.096 5.81818 41 9.1948 41 13.5584C41 17.7143 40.0428 21.5584 38.1284 25.0909C36.214 28.7273 33.3956 32.3117 29.6732 35.8441C29.5668 35.948 29.4073 36 29.1946 36C28.8755 36 28.6096 35.8442 28.3969 35.5325C28.1842 35.2208 28.1842 34.961 28.3969 34.7532C33.6083 29.5584 36.214 23.4286 36.214 16.3636C36.214 13.4545 35.6822 11.3247 34.6187 9.97403C33.6615 11.5325 32.013 12.3117 29.6732 12.3117ZM6.22179 12.3117C4.30739 12.3117 2.81842 11.7403 1.75487 10.5974C0.584959 9.45454 2.44784e-06 8 2.60225e-06 6.23376C2.96556e-06 2.07792 2.44617 -3.37048e-06 7.33852 -2.94278e-06C10.5292 -2.66384e-06 13.0285 1.14285 14.8366 3.42857C16.6446 5.81818 17.5486 9.1948 17.5486 13.5584C17.5486 17.7143 16.5914 21.5584 14.677 25.0909C12.7626 28.7273 9.94423 32.3117 6.22179 35.8441C6.11544 35.948 5.95591 36 5.74319 36C5.42413 36 5.15824 35.8442 4.94553 35.5325C4.73282 35.2208 4.73282 34.961 4.94553 34.7532C10.1569 29.5584 12.7626 23.4286 12.7626 16.3636C12.7626 13.4545 12.2309 11.3247 11.1673 9.97402C10.2101 11.5325 8.56161 12.3117 6.22179 12.3117Z" fill="url(#paint0_linear_303_308)"/>
                                             <defs>
                                             <linearGradient id="paint0_linear_303_308" x1="34.4656" y1="67.2" x2="-15.5152" y2="37.6595" gradientUnits="userSpaceOnUse">
@@ -317,7 +318,7 @@
                 <div class="about-area bg-default bg-top" data-background="assets/img/bg/about-bg.png">
                     <div class="about-content-section-wrap about-area-overlay">
                         <div class="container">
-                            <div class="sd-about-space-left pl-70 pb-100">
+                            <div class="sd-about-space-left pl-lg-70 pb-100">
                                 <div class="row">
                                     <div class="col-xxl-12">
                                         <div class="sd-about-content">
@@ -364,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-content-section-title-area pt-295 pb-250 about-section-title-overlay">
+                    <div class="about-content-section-title-area pb-250 about-section-title-overlay">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xxl-8">
@@ -382,7 +383,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xxl-12">
-                                <div class="sd-handcover-book-box pl-95 pt-110 pb-70">
+                                <div class="sd-handcover-book-box">
                                     <div class="sd-handcover-book-box-title-bg">
                                         <h4 class="sd-handcover-book-section-title">HardCOVER book</h4>
                                     </div>
@@ -392,7 +393,7 @@
                                                 <div class="sd-handcover-book-img pt-60">
                                                     <img src="assets/img/books/book-1.png" alt="">
                                                 </div>
-                                                <div class="sd-handcover-book-content pl-80">
+                                                <div class="sd-handcover-book-content">
                                                     <h4 class="sd-handcover-book-content-title-top">SIDDHA PARAM-PARA</h4>
                                                     <div class="sd-handcover-book-content-box-wrap">
                                                         <h4 class="sd-handcover-book-content-title">The Key to Bio-Spiritual Immortality: Awakening to Natural Spirituality (Part 1) Kindle Edition</h4>

@@ -35,8 +35,16 @@
         height: 403px;
         display: inline-block;
         object-fit: cover;
+        width: 100%;
+
         @media #{$xl} {
             height: 233px;
+        }
+        @media #{$md} {
+            height: 313px;
+        }
+        @media #{$xs} {
+            height: 313px;
         }
     }
 }
@@ -58,6 +66,12 @@
             @media #{$xl} {
                 height: 387px;
             }
+            @media #{$sm} {
+                height: 438px;
+            }
+            @media #{$xxs} {
+                height: 350px;
+            }
         }
     }
 }
@@ -77,5 +91,5 @@
     min-height: 597px;
 }
 .sd-transmission-gallery-active {
-    min-height: 597px;
+    // min-height: 597px;
 }
