@@ -125,8 +125,6 @@
 		}
 	});
 
-
-
       var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
         slidesPerView: 2,
         spaceBetween: 120,
