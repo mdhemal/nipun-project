@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .sd-teaching-book {
 	&-container {
 	    border-radius: 40px 0px 0px 40px;
@@ -15,6 +17,11 @@
 	& a {
 		position: relative;
 		display: inline-block;
+		@media #{$xs} {
+			position: static;
+			display: block;
+		}
+
 		&::after {
 		    position: absolute;
 		    left: 50%;
@@ -37,15 +44,34 @@
 		& img {
 		    max-width: 235px !important;
 		    border-radius: 10px;
+			@media #{$xs} {
+				max-width: 100% !important;
+			}
 		}
 	}
 }
 .teaching-book-list-active {
     transform: translateX(80px);
+	@media #{$xs} {
+		transform: translateX(0);
+	}
 }
 .book-footer-negative-space {
 	margin-top: -385px;
     padding-top: 565px;
+
+	@media #{$md, $lg} {
+		margin-top: -678px;
+		padding-top: 790px;
+	}
+	@media #{$sm} {
+		margin-top: -778px;
+		padding-top: 870px;
+	}
+	@media #{$xxs} {
+		margin-top: -948px;
+		padding-top: 1038px;
+	}
 }
 .sd-teaching-arrow-float {
 	float: right;

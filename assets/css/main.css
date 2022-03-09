@@ -2264,6 +2264,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   line-height: 65px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-section-title.sd-teaching-title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-section-title.sd-teaching-title {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sd-section-title {
     font-size: 55px;
     line-height: 1.2;
@@ -2577,7 +2589,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-bottom: 70px;
   padding-left: 95px;
 }
-@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .sd-handcover-book-box {
     padding-left: 0;
     padding-bottom: 0;
@@ -2636,11 +2648,19 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 0 50px;
   line-height: 78px;
 }
+@media (max-width: 767px) {
+  .sd-handcover-book-section-title {
+    font-size: 18px;
+    line-height: 260%;
+    min-height: 48px;
+    padding: 0 15px;
+  }
+}
 .sd-handcover-book-content {
   overflow: hidden;
   padding-left: 80px;
 }
-@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .sd-handcover-book-content {
     padding-left: 0;
   }
@@ -2652,7 +2672,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .sd-handcover-book-content-box-wrap {
     padding: 30px 40px;
     border-radius: 0;
@@ -2673,6 +2693,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 15px;
   color: #FFFFFF;
 }
+@media (max-width: 767px) {
+  .sd-handcover-book-content-title {
+    font-size: 18px;
+  }
+}
 .sd-handcover-book-content-text {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
@@ -2680,6 +2705,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 17px;
   line-height: 21px;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .sd-handcover-book-content-text {
+    font-size: 14px;
+  }
 }
 .sd-handcover-book-content-title-top {
   margin-bottom: 18px;
@@ -2690,6 +2720,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-size: 54px;
   line-height: 65px;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .sd-handcover-book-content-title-top {
+    font-size: 34px;
+  }
 }
 
 .handcover-negative-space {
@@ -2720,6 +2755,19 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .sd-journy-social-icon-box-title a {
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  .sd-journy-social-icon-box {
+    width: 106px;
+    height: 106px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .sd-journy-social-icon-box img {
+    width: 60%;
+  }
 }
 
 .sd-header-trans-main {
@@ -3063,6 +3111,12 @@ header.sd-header-trans-main {
   position: relative;
   display: inline-block;
 }
+@media (max-width: 767px) {
+  .teaching-book-list-active a {
+    position: static;
+    display: block;
+  }
+}
 .teaching-book-list-active a::after {
   position: absolute;
   left: 50%;
@@ -3086,14 +3140,42 @@ header.sd-header-trans-main {
   max-width: 235px !important;
   border-radius: 10px;
 }
+@media (max-width: 767px) {
+  .teaching-book-list-active a img {
+    max-width: 100% !important;
+  }
+}
 
 .teaching-book-list-active {
   transform: translateX(80px);
+}
+@media (max-width: 767px) {
+  .teaching-book-list-active {
+    transform: translateX(0);
+  }
 }
 
 .book-footer-negative-space {
   margin-top: -385px;
   padding-top: 565px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .book-footer-negative-space {
+    margin-top: -678px;
+    padding-top: 790px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .book-footer-negative-space {
+    margin-top: -778px;
+    padding-top: 870px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .book-footer-negative-space {
+    margin-top: -948px;
+    padding-top: 1038px;
+  }
 }
 
 .sd-teaching-arrow-float {
@@ -3147,6 +3229,21 @@ header.sd-header-trans-main {
 .book-footer-wrap-overlay > * {
   position: relative;
   z-index: 9;
+}
+
+.footer-menu-mobile ul {
+  list-style-type: none;
+  width: 50%;
+  padding: 10px 0;
+}
+.footer-menu-mobile li {
+  padding: 0;
+}
+.footer-menu-mobile a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

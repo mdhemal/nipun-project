@@ -103,8 +103,9 @@
 
 
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
-		slidesPerView: 6,
-		spaceBetween: 45,
+		slidesPerView: 1,
+
+		spaceBetween: 10,
 		navigation: {
 			nextEl: '.swiper-book-next',
 			prevEl: '.swiper-book-prev',
@@ -113,8 +114,22 @@
 			el: ".swiper-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 6,
+				spaceBetween: 45,
+			},
+			578: {
+				slidesPerView: 3,
+			}
+		}
 	});
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0211913877ec69f5b211212c8c65d098b72c67b1
       var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
         slidesPerView: 2,
         spaceBetween: 120,
