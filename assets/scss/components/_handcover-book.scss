@@ -20,7 +20,7 @@
 		padding-bottom: 70px;
 		padding-left: 95px;
 
-		@media #{$xs, $md, $lg} {
+		@media #{$xs, $md} {
 			padding-left: 0;
 			padding-bottom: 0;
 		}
@@ -90,7 +90,7 @@
 		overflow: hidden;
 		padding-left: 80px;
 
-		@media #{$xs, $md, $lg} {
+		@media #{$xs, $md, } {
 			padding-left: 0;
 		}
 
@@ -101,7 +101,7 @@
 		    border-top-right-radius: 0;
 		    border-bottom-right-radius: 0;
 
-			@media #{$md, $lg} {
+			@media #{$md} {
 				padding: 30px 40px;
 				border-radius: 0;
 			}
