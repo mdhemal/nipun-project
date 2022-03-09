@@ -20,6 +20,12 @@
 	    @media #{$lg} {
 	    	font-size: 72px;
 	    }
+		@media #{$md} {
+			font-size: 60px;
+		}
+		@media #{$xxs, $sm} {
+			font-size: 34px;
+		}
 	}
 	&-title-label {
         color: #fff;
@@ -28,6 +34,13 @@
 	    text-align: center;
 	    line-height: 1;
 	    margin-top: -7px;
+
+		@media #{$xxs} {
+			font-size: 24px;
+		}
+		@media #{$sm} {
+			font-size: 28px;
+		}
 	}
 	&-form {
 		& input[type="text"] {
@@ -49,9 +62,14 @@
 		    border: 0;
 		    @include placeholder {
 			    color: #fff;
-			    font-size: 20px;
 			    font-family: $quicksand;
 		    }
+
+			@media #{$xs} {
+				height: 80px;
+				padding: 0 35px;
+				width: 100%;
+			}
 		}
 	}
 }

@@ -2,6 +2,13 @@
 .sd-handcover-book {
 	&-img {
 		float: left;
+
+		@media #{$xs, $md} {
+			float: none;
+		}
+	}
+	&-wrap-group {
+		text-align: center;
 	}
 	&-box {
 		overflow: hidden;
@@ -9,6 +16,16 @@
 	    background-color: rgba(255,255,255,.1);
 	    backdrop-filter: blur(140px);
 	    border-radius: 40px;
+		padding-top: 110px;
+		padding-bottom: 70px;
+		padding-left: 95px;
+
+		@media #{$xs, $md, $lg} {
+			padding-left: 0;
+			padding-bottom: 0;
+		}
+
+
 	    & > * {
 	    	position: relative;
 	    	z-index: 9;
@@ -65,12 +82,28 @@
 	}
 	&-content {
 		overflow: hidden;
+		padding-left: 80px;
+
+		@media #{$xs, $md, $lg} {
+			padding-left: 0;
+		}
+
 		&-box-wrap {
 			background: rgba(255, 255, 255, 0.15);
 		    border-radius: 40px;
 		    padding: 50px 70px;
 		    border-top-right-radius: 0;
 		    border-bottom-right-radius: 0;
+
+			@media #{$md, $lg} {
+				padding: 30px 40px;
+				border-radius: 0;
+			}
+
+			@media #{$xs} {
+				padding: 20px 25px;
+				border-radius: 0;
+			}
 		}
 		&-title {
 			font-family: $quicksand;

@@ -1710,6 +1710,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-right: 200px;
 }
 
+@media (min-width: 992px) {
+  .pl-lg-95 {
+    padding-left: 95px;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -1943,6 +1948,16 @@ input:focus::placeholder, textarea:focus::placeholder {
     font-size: 72px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-slide-title {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .sd-slide-title {
+    font-size: 34px;
+  }
+}
 .sd-slide-title-label {
   color: #fff;
   font-weight: 500;
@@ -1950,6 +1965,16 @@ input:focus::placeholder, textarea:focus::placeholder {
   text-align: center;
   line-height: 1;
   margin-top: -7px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .sd-slide-title-label {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .sd-slide-title-label {
+    font-size: 28px;
+  }
 }
 .sd-slide-form input[type=text] {
   background: #50465B;
@@ -1971,23 +1996,26 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .sd-slide-form input[type=text]::-webkit-input-placeholder {
   color: #fff;
-  font-size: 20px;
   font-family: "Quicksand", sans-serif;
 }
 .sd-slide-form input[type=text]:-moz-placeholder {
   color: #fff;
-  font-size: 20px;
   font-family: "Quicksand", sans-serif;
 }
 .sd-slide-form input[type=text]::-moz-placeholder {
   color: #fff;
-  font-size: 20px;
   font-family: "Quicksand", sans-serif;
 }
 .sd-slide-form input[type=text]:-ms-input-placeholder {
   color: #fff;
-  font-size: 20px;
   font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 767px) {
+  .sd-slide-form input[type=text] {
+    height: 80px;
+    padding: 0 35px;
+    width: 100%;
+  }
 }
 
 .sd-rounded-btn {
@@ -2085,6 +2113,19 @@ input:focus::placeholder, textarea:focus::placeholder {
 .sd-single-service-title a {
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  .sd-single-service-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+  }
+  .sd-single-service-icon svg {
+    max-height: 60%;
+  }
+  .sd-single-service-title {
+    font-size: 15px;
+  }
+}
 
 .t-s-wrapper-bg {
   position: relative;
@@ -2113,14 +2154,32 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-top: -88px;
 }
 
+.sd-testimonial-content-wrap {
+  position: relative;
+}
 .sd-testimonial-content {
   font-family: "Cormorant", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 27px;
-  line-height: 33px;
+  line-height: 160%;
   text-align: center;
   color: #FFFFFF;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-testimonial-content {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .sd-testimonial-content {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .sd-testimonial-content {
+    font-size: 18px;
+  }
 }
 .sd-testimonial-author {
   display: block;
@@ -2133,36 +2192,32 @@ input:focus::placeholder, textarea:focus::placeholder {
   text-align: center;
   color: #FFFFFF;
 }
-.sd-testimonial-content-wrap .quote-left {
-  left: -43px;
-  position: absolute;
-  top: -37px;
+.sd-testimonial-quote {
+  font-size: 150%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .sd-testimonial-content-wrap .quote-left {
-    left: -23px;
-    top: -57px;
+@media (max-width: 767px) {
+  .sd-testimonial-quote {
+    font-size: 120%;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.sd-testimonial-content-wrap .quote-left {
+  position: absolute;
+  right: calc(100% - 20px);
+  bottom: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 1799px), (min-width: 1800px) {
   .sd-testimonial-content-wrap .quote-left {
-    left: -13px;
-    top: -57px;
+    right: calc(100% - 80px);
   }
 }
 .sd-testimonial-content-wrap .quote-right {
   position: absolute;
-  bottom: -72px;
-  right: -47px;
+  left: calc(100% - 20px);
+  top: 70%;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 1799px), (min-width: 1800px) {
   .sd-testimonial-content-wrap .quote-right {
-    right: -17px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .sd-testimonial-content-wrap .quote-right {
-    right: -7px;
+    left: calc(100% - 90px);
   }
 }
 
@@ -2193,7 +2248,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-style: normal;
   font-weight: 500;
   font-size: 74px;
-  line-height: 90px;
+  line-height: 122%;
   background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
   color: transparent;
   -webkit-background-clip: text;
@@ -2207,6 +2262,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 500;
   font-size: 54px;
   line-height: 65px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-section-title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-section-title {
+    font-size: 33px;
+    line-height: 1.2;
+  }
 }
 
 .sd-donate-support-content p {
@@ -2232,6 +2299,16 @@ input:focus::placeholder, textarea:focus::placeholder {
     padding: 80px 78px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-donate-support-content-space {
+    padding: 40px 48px;
+  }
+}
+@media (max-width: 767px) {
+  .sd-donate-support-content-space {
+    padding: 20px 28px;
+  }
+}
 .sd-donate-support-content-space::before {
   content: "";
   position: absolute;
@@ -2244,6 +2321,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+  pointer-events: none;
 }
 
 .donate-support-move-space-top {
@@ -2252,8 +2330,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 9;
 }
 
-.donate-support-move-space {
-  margin-left: calc(100% - 1188px);
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 1799px), (min-width: 1800px) {
+  .donate-support-move-space {
+    margin-left: calc(100% - 1188px);
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .donate-support-move-space {
@@ -2283,13 +2363,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   content: "";
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .sd-donate-support-content .sd-section-title {
-    font-size: 55px;
-    line-height: 1.2;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .sd-donate-support-content .sd-section-title br {
     display: none;
   }
@@ -2335,10 +2409,21 @@ input:focus::placeholder, textarea:focus::placeholder {
   height: 403px;
   display: inline-block;
   object-fit: cover;
+  width: 100%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .single-transmission-gallery img {
     height: 233px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-transmission-gallery img {
+    height: 313px;
+  }
+}
+@media (max-width: 767px) {
+  .single-transmission-gallery img {
+    height: 313px;
   }
 }
 
@@ -2360,6 +2445,16 @@ input:focus::placeholder, textarea:focus::placeholder {
     height: 387px;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slick-active.slick-center .single-transmission-gallery img {
+    height: 438px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .slick-active.slick-center .single-transmission-gallery img {
+    height: 350px;
+  }
+}
 
 .sd-transmission-gallery-active .slick-track {
   display: flex;
@@ -2375,10 +2470,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   min-height: 597px;
 }
 
-.sd-transmission-gallery-active {
-  min-height: 597px;
-}
-
 .sd-about-title {
   font-family: "Cormorant", serif;
   font-style: normal;
@@ -2387,6 +2478,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   line-height: 78px;
   text-align: center;
   color: #2D394F;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-about-title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-about-title {
+    font-size: 33px;
+    line-height: 1.2;
+  }
 }
 .sd-about-text-1 p, .sd-about-text-2 p {
   font-family: "Quicksand", sans-serif;
@@ -2409,7 +2512,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: absolute;
   content: "";
   left: 0;
-  top: 0;
+  top: -1px;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(180deg, rgba(246, 241, 238, 0) 0%, rgba(246, 241, 238, 0.57) 40.26%, rgba(246, 241, 238, 0.9) 61.15%, rgba(246, 241, 238, 0.91) 86.7%, #F6F1EE 100%);
@@ -2456,12 +2559,29 @@ input:focus::placeholder, textarea:focus::placeholder {
 .sd-handcover-book-img {
   float: left;
 }
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-handcover-book-img {
+    float: none;
+  }
+}
+.sd-handcover-book-wrap-group {
+  text-align: center;
+}
 .sd-handcover-book-box {
   overflow: hidden;
   position: relative;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(140px);
   border-radius: 40px;
+  padding-top: 110px;
+  padding-bottom: 70px;
+  padding-left: 95px;
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-handcover-book-box {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
 }
 .sd-handcover-book-box > * {
   position: relative;
@@ -2518,6 +2638,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .sd-handcover-book-content {
   overflow: hidden;
+  padding-left: 80px;
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-handcover-book-content {
+    padding-left: 0;
+  }
 }
 .sd-handcover-book-content-box-wrap {
   background: rgba(255, 255, 255, 0.15);
@@ -2525,6 +2651,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 50px 70px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-handcover-book-content-box-wrap {
+    padding: 30px 40px;
+    border-radius: 0;
+  }
+}
+@media (max-width: 767px) {
+  .sd-handcover-book-content-box-wrap {
+    padding: 20px 25px;
+    border-radius: 0;
+  }
 }
 .sd-handcover-book-content-title {
   font-family: "Quicksand", sans-serif;
