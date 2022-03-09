@@ -126,4 +126,22 @@
 	});
 
 
+
+      var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
+        slidesPerView: 2,
+        spaceBetween: 120,
+        grabCursor: true,
+        navigation: {
+		    nextEl: '.sd-teaching-testimonial-navigation-next',
+		    prevEl: '.sd-teaching-testimonial-navigation-prev',
+		  },
+        pagination: {
+          el: ".sd-teaching-testimonial-pagination",
+          clickable: true,
+        },
+      });
+
+    
+
+    
 })(jQuery);

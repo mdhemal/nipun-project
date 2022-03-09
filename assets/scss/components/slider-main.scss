@@ -289,3 +289,27 @@ header.sd-header-trans-main {
 .sd-slider-main-thumb-navigation .sd-slider-main-thumb-navigation-prev img:hover {
     padding-left: 0;
 }
+
+.sd-slide-content-wrapp {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: red;
+        z-index: 1;
+    }
+}
+
+.sd-slide-content-text {
+    padding: 60px 40px;
+}
+.sd-teaching-testimonial-wrapper .swiper-slide.swiper-slide-active {
+    width: calc(100% - 45%) !important;
+}
