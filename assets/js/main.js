@@ -103,8 +103,9 @@
 
 
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
-		slidesPerView: 6,
-		spaceBetween: 45,
+		slidesPerView: 1,
+
+		spaceBetween: 10,
 		navigation: {
 			nextEl: '.swiper-book-next',
 			prevEl: '.swiper-book-prev',
@@ -113,6 +114,15 @@
 			el: ".swiper-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 6,
+				spaceBetween: 45,
+			},
+			578: {
+				slidesPerView: 3,
+			}
+		}
 	});
 
 

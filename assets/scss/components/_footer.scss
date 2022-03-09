@@ -39,3 +39,20 @@
         z-index: 9;
     }
 }
+
+.footer-menu-mobile {
+    ul {
+        list-style-type: none;
+        width: 50%;
+        padding: 10px 0;
+    }
+    li {
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px;
+        display: block;
+    }
+}
