@@ -115,9 +115,6 @@
 		},
 	});
 
-
-<<<<<<< HEAD
-
       var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
         slidesPerView: 2,
         spaceBetween: 120,
@@ -135,6 +132,4 @@
     
 
     
-=======
->>>>>>> 07108c329b588e3c560a853db3d99df1449de6d2
 })(jQuery);
