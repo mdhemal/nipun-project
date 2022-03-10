@@ -1,0 +1,101 @@
+@use '../abstracts/variables' as *;
+.sd-event-program {
+	&-box {
+		background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(140px);
+		border-radius: 20px;
+		padding: 60px;
+		text-align: center;
+	}
+	&-title {
+		font-family: $cormorant;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 42px;
+		line-height: 51px;
+		text-align: center;
+		background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+	&-text {
+	    font-family: $quicksand;
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 17px;
+	    line-height: 21px;
+	    color: #FFFFFF;
+	}
+	&-sm {
+		&-title {
+			font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 21px;
+		    line-height: 26px;
+		    text-align: center;
+		    color: #FFFFFF;
+		}
+	}
+	&-session {
+		&-item-title {
+		    font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-size: 17px;
+		    line-height: 21px;
+		    text-align: center;
+		    color: #FFFFFF;
+		}
+		&-item {
+			&-box {
+				&-sm {
+					background: rgba(255, 255, 255, 0.1);
+					backdrop-filter: blur(45px);
+					border-radius: 10px;
+					padding: 13px;
+					&-title {
+					    background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+					    -webkit-background-clip: text;
+					    -webkit-text-fill-color: transparent;
+					    background-clip: text;
+					    text-fill-color: transparent;
+					    font-family: $quicksand;
+					    font-style: normal;
+					    font-weight: 500;
+					    font-size: 21px;
+					    margin-bottom: 0;
+					    line-height: 26px;
+					    text-align: center;
+					    display: block;
+				        padding-bottom: 23px;
+				        position: relative;
+				        &::after {
+				        	bottom: 0;
+				        	background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+				        	width: 36px;
+				        	height: 1px;
+				        	content: "";
+				        	position: absolute;
+				        	bottom: 10px;
+				        	left: 50%;
+				        	transform: translateX(-50%);
+				        }
+					}
+					&-subtitle {
+					    font-family: $quicksand;
+					    font-style: normal;
+					    font-weight: 400;
+					    font-size: 17px;
+					    line-height: 21px;
+					    text-align: center;
+					    color: #FFFFFF;
+					    margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

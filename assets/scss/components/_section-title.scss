@@ -38,5 +38,34 @@
 			font-size: 33px;
 			line-height: 1.2;
 		}
+		&-3 {
+			/* Accent */
+			font-family: $cormorant;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 84px;
+			line-height: 102px;
+			/* identical to box height */
+			text-align: center;
+			/* GOLD 3 */
+			background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+	&-subtitle {
+		&-3 {
+			font-family: $quicksand;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-size: 44px;
+		    margin-bottom: 0;
+		    line-height: 55px;
+		    text-align: center;
+		    color: #FFFFFF;
+		}
 	}
 }
+

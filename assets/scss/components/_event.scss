@@ -1,0 +1,102 @@
+@use '../abstracts/variables' as *;
+.sd-event-breadcrumb-height {
+	min-height: 800px;
+}
+.sd-has-event-breadcrumb-overlay-3 {
+	position: relative;
+	&::after {
+		height: 528px;
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-image: linear-gradient(180deg, rgba(36, 25, 58, 0) 0%, rgba(36, 25, 58, 0.67) 49.54%, #24193A 100%);
+	}
+}
+.sd-event-service {
+	&-box {
+		background-color: rgba(255, 255, 255, 0.1);
+	    min-height: 289px;
+	    display: flex;
+	    justify-content: center;
+	    border-radius: 10px;
+	    transition: all .3s;
+	    align-items: center;
+	    padding: 30px;
+	    position: relative;
+	    &::before {
+	    	content: "";
+		    border-radius: 10px;
+		    transition: all .3s;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    padding: 1px;
+		    background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+		    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		    -webkit-mask-composite: xor;
+		    mask-composite: exclude;
+		    pointer-events: none;
+	    }
+	    & > * {
+	    	position: relative;
+	    	z-index: 3;
+	    }
+	}
+	&-title {
+		font-family: $quicksand;
+	    font-style: normal;
+	    font-weight: 500;
+	    font-size: 21px;
+        margin-bottom: 0;
+	    line-height: 26px;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+}
+.sd-event-box-service-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s;
+    padding: 0;
+    & .hidden-title {
+	    font-family: 'Quicksand';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 17px;
+	    line-height: 21px;
+	    color: #FFFFFF;
+	    margin-bottom: 20px;
+	    & span {
+	    	background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+	    }
+	}
+}
+.sd-event-service-box:hover {
+	background: rgba(255, 255, 255, 0.3);
+	& .sd-event-box-service-hidden {
+		max-height: 290px;
+	}
+}
+.sd-event-hero-space {
+    margin-top: -148px;
+}
+.sd-event-label-text {
+	& p {
+	    font-family: $quicksand;
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 20px;
+	    line-height: 25px;
+	    text-align: center;
+	    color: #FFFFFF;
+	    margin-bottom: 0px;
+	}
+}

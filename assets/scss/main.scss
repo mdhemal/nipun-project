@@ -3,7 +3,7 @@
 @forward  './abstracts/mixins';
 @forward  './abstracts/common';
 @forward './components/header';
-@forward './components/section_title';
+@forward './components/section-title';
 @forward './components/back-to-top';
 @forward './components/slider';
 @forward './components/service';
@@ -16,3 +16,5 @@
 @forward './components/slider-main';
 @forward './components/teaching-book';
 @forward './components/footer';
+@forward './components/event';
+@forward './components/program';

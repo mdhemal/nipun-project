@@ -1734,6 +1734,14 @@ input:focus::placeholder, textarea:focus::placeholder {
   --bs-gutter-x: 30px;
 }
 
+.z-3 {
+  z-index: 3;
+}
+
+.pb-220 {
+  padding-bottom: 220px;
+}
+
 .sd-header-logo img {
   max-width: 46px;
 }
@@ -1838,6 +1846,77 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 .sd-header-social a:first-child {
   margin-left: 0;
+}
+
+.sd-section-title {
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 122%;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sd-section-title.sd-teaching-title {
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 65px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-section-title.sd-teaching-title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-section-title.sd-teaching-title {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sd-section-title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-section-title {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+}
+.sd-section-title-3 {
+  /* Accent */
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 102px;
+  /* identical to box height */
+  text-align: center;
+  /* GOLD 3 */
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.sd-section-subtitle-3 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  margin-bottom: 0;
+  line-height: 55px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /*
@@ -2241,51 +2320,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(36, 25, 58, 0) 0.01%, rgba(36, 25, 58, 0.47) 34.99%, rgba(36, 25, 58, 0.97) 73.18%, #24193A 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
   content: "";
-}
-
-.sd-section-title {
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 74px;
-  line-height: 122%;
-  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
-  color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.sd-section-title.sd-teaching-title {
-  font-family: "Cormorant", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 65px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .sd-section-title.sd-teaching-title {
-    font-size: 55px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .sd-section-title.sd-teaching-title {
-    font-size: 33px;
-    line-height: 1.2;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .sd-section-title {
-    font-size: 55px;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .sd-section-title {
-    font-size: 33px;
-    line-height: 1.2;
-  }
 }
 
 .sd-donate-support-content p {
@@ -3091,7 +3125,7 @@ header.sd-header-trans-main {
 }
 
 .sd-teaching-testimonial-wrapper .swiper-slide.swiper-slide-active {
-  width: 55% !important;
+  width: calc(100% - 45%) !important;
 }
 
 .sd-teaching-book-container {
@@ -3244,6 +3278,201 @@ header.sd-header-trans-main {
   color: #FFFFFF;
   padding: 10px;
   display: block;
+}
+
+.sd-event-breadcrumb-height {
+  min-height: 800px;
+}
+
+.sd-has-event-breadcrumb-overlay-3 {
+  position: relative;
+}
+.sd-has-event-breadcrumb-overlay-3::after {
+  height: 528px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(36, 25, 58, 0) 0%, rgba(36, 25, 58, 0.67) 49.54%, #24193A 100%);
+}
+
+.sd-event-service-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 289px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.3s;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+.sd-event-service-box::before {
+  content: "";
+  border-radius: 10px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1px;
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.sd-event-service-box > * {
+  position: relative;
+  z-index: 3;
+}
+.sd-event-service-title {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 0;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sd-event-box-service-hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+  padding: 0;
+}
+.sd-event-box-service-hidden .hidden-title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.sd-event-box-service-hidden .hidden-title span {
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.sd-event-service-box:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.sd-event-service-box:hover .sd-event-box-service-hidden {
+  max-height: 290px;
+}
+
+.sd-event-hero-space {
+  margin-top: -148px;
+}
+
+.sd-event-label-text p {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.sd-event-program-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+}
+.sd-event-program-title {
+  font-family: "Cormorant", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.sd-event-program-text {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.sd-event-program-sm-title {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sd-event-program-session-item-title {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sd-event-program-session-item-box-sm {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(45px);
+  border-radius: 10px;
+  padding: 13px;
+}
+.sd-event-program-session-item-box-sm-title {
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 0;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  padding-bottom: 23px;
+  position: relative;
+}
+.sd-event-program-session-item-box-sm-title::after {
+  bottom: 0;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  width: 36px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sd-event-program-session-item-box-sm-subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
