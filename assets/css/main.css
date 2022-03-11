@@ -3559,7 +3559,7 @@ header.sd-header-trans-main {
   text-decoration: none;
   line-height: 59px;
   padding: 0 50px;
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
