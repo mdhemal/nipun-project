@@ -3377,10 +3377,9 @@ img.sd-main-about-abs-img {
   background: linear-gradient(180deg, #1B1733 0%, rgba(28, 24, 52, 0.97) 33.27%, rgba(29, 25, 52, 0.62) 67.99%, rgba(30, 26, 53, 0.26) 100%);
   z-index: -1;
   top: 262px;
-=======
+}
 .sd-teaching-testimonial-wrapper .swiper-slide.swiper-slide-active {
   width: calc(100% - 45%) !important;
->>>>>>> 3e7e51b208cc13e59c61789434a4ed499b5f2259
 }
 
 .sd-teaching-book-container {
