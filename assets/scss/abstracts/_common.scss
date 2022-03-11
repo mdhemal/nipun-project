@@ -360,8 +360,23 @@ input:focus::placeholder, textarea:focus::placeholder {
         max-width: 1620px;
         padding: 0 15px;
     }
+    .container-3-full {
+        max-width: 1300px;
+    }
 }
 .row { 
  --bs-gutter-x: 30px;
 }
 
+.z-3 {
+    z-index: 3;
+}
+.pb-220 {
+    padding-bottom: 220px;
+}
+.pb-235 {
+    padding-bottom: 235px;
+}
+.pb-410 {
+    padding-bottom: 410px;
+}
