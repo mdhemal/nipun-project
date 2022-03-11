@@ -501,3 +501,123 @@ img.sd-main-about-abs-img {
     z-index: -1;
     top: 262px;
 }
+
+.sd-title-border-left {
+    display: inline-block;
+    position: relative;
+}
+
+.sd-title-border-left:before {
+    position: absolute;
+    right: calc(100% + 30px );
+    width: 900%;
+    content: "";
+    height: 2px;
+    padding: 0 20px;
+    top: 50px;
+    background-color: red;
+}
+.sd-has-title-before-padding {
+    margin: 0 280px;
+    overflow: hidden;
+}
+.container-fluid {
+    padding: 0 15px;
+}
+.sd-book-knowledge-area-main {
+    background-repeat: no-repeat;
+}
+
+.sd-has-section-before.sd-book-wrapper-area {
+    position: relative;
+    z-index: 1;
+}
+
+.sd-has-section-before.sd-book-wrapper-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-image: url(../img/book-main/book-main-bg.jpg);
+}
+.ml-300 {
+    margin-left: 300px;
+}
+.black-text {
+    color: #000;
+}
+
+.sd-upper-book-bg {
+    position: relative;
+    z-index: 1;
+}
+.sd-upper-book-bg:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(246, 241, 238, 0) 24.09%, #F6F1EE 99.9%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.sd-yoga-test-container {
+    max-width: 1590px;
+    margin-left: auto;
+}
+
+.sd-yoga-content-wrapp {
+    display: flex;
+    align-items: center;
+}
+
+.sd-yoga-content-img {
+    flex: 0 0 415px;
+    max-width: 415px
+}
+.sd-yoga-content-text {
+    flex: 0 0 600px;
+    max-width: 600px;
+}
+.sd-yoga-test-wrapper .swiper-slide.swiper-slide-next {
+    width: 1020px !important;
+}
+.sd-yoga-test-wrapper .swiper-slide.swiper-slide-active {
+    width: 1020px !important;
+}
+.sd-yoga-content-text {
+    padding: 45px 30px;
+    border: 1px solid red;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+a.sd-yoga-author {
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    background: linear-gradient(95.61deg, #492456 6.93%, #B99C37 102.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.sd-yoga-test-wrapper .swiper-slide.swiper-slide-next .sd-yoga-content-text {
+    margin-left: -70px;
+    border-left: 1px solid red;
+    border-radius: 10px;
+    padding-left: 100px;
+}
+.ml-430 {
+    margin-left: 430px;
+}
