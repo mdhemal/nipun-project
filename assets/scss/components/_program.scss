@@ -6,6 +6,28 @@
 		border-radius: 20px;
 		padding: 60px;
 		text-align: center;
+		position: relative;
+		z-index: 3;
+		& > * {
+			position: relative;
+			z-index: 3;
+		}
+		&::before {
+			content: "";
+		    border-radius: 10px;
+		    transition: all 0.3s;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    padding: 1px;
+		    background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+		    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		    -webkit-mask-composite: xor;
+		    mask-composite: exclude;
+		    pointer-events: none;
+		}
 	}
 	&-title {
 		font-family: $cormorant;
@@ -97,5 +119,17 @@
 				}
 			}
 		}
+	}
+}
+.sd-has-section-before {
+	position: relative;
+	&::before {
+		position: absolute;
+	    left: 144px;
+	    top: 186px;
+	    height: calc(100% - 186px);
+	    content: "";
+	    width: 1px;
+	    background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
 	}
 }
