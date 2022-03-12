@@ -3167,7 +3167,7 @@ header.sd-header-trans-main {
 }
 
 .sd-teaching-testimonial-wrapper .swiper-slide.swiper-slide-active {
-  width: 55% !important;
+  width: calc(100% - 45%) !important;
 }
 
 .sd_height_435 {
@@ -3385,7 +3385,7 @@ img.sd-main-about-abs-img {
 
 .sd-title-border-left:before {
   position: absolute;
-  right: calc(100% + 30px);
+  right: calc(100% + 30px );
   width: 900%;
   content: "";
   height: 2px;
@@ -3460,6 +3460,7 @@ img.sd-main-about-abs-img {
 
 .sd-yoga-content-img {
   flex: 0 0 415px;
+  position: relative;
   max-width: 415px;
 }
 
@@ -3478,9 +3479,9 @@ img.sd-main-about-abs-img {
 
 .sd-yoga-content-text {
   padding: 45px 30px;
-  border: 1px solid red;
   border-left: 0;
   border-radius: 0 10px 10px 0;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 a.sd-yoga-author {
@@ -3509,6 +3510,18 @@ a.sd-yoga-author {
 
 .ml-430 {
   margin-left: 430px;
+}
+
+.sd-yoga-content-text-inner .sd-yoga-content-p {
+  color: #fff;
+}
+
+.sd-youga-space-top-reverce {
+  margin-top: -625px;
+}
+
+.sd-youga-bg-wrapper.bg-default {
+  background-position: bottom -61px right 0;
 }
 
 .sd-teaching-book-container {
@@ -3661,6 +3674,103 @@ a.sd-yoga-author {
   color: #FFFFFF;
   padding: 10px;
   display: block;
+}
+
+.sd-footer-grad-overlay {
+  position: relative;
+}
+.sd-footer-grad-overlay::after {
+  background: linear-gradient(180deg, rgba(36, 25, 58, 0) 0%, rgba(36, 25, 58, 0.65) 40.26%, rgba(36, 25, 58, 0.9) 74.02%, #24193A 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.sd-footer-grad-overlay > * {
+  position: relative;
+  z-index: 3;
+}
+
+.pt-330 {
+  padding-top: 330px;
+}
+
+.sd-footer-negative-space-2 {
+  margin-top: -90px;
+}
+
+.sd-subscribe-title-2 {
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 65px;
+}
+
+.sd-subscribe-main-wrapp {
+  border: 0;
+  position: relative;
+}
+.sd-subscribe-main-wrapp > * {
+  position: relative;
+  z-index: 3;
+}
+.sd-subscribe-main-wrapp::after {
+  content: "";
+  border-radius: 10px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.sd-subscribe-main-wrapp input {
+  border-radius: 60px;
+}
+
+.sd-subscribe-main-wrapp button {
+  border: 0;
+}
+
+.sd-subscribe-main-wrapp input, .sd-subscribe-main-wrapp textarea {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+  color: #fff;
+  border-color: gold;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.sd-subscribe-main-wrapp input::placeholder, .sd-subscribe-main-wrapp textarea::placeholder {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.footer-has-opacity-bg {
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(140px);
 }
 
 .sd-event-breadcrumb-height {
@@ -3952,10 +4062,33 @@ a.sd-yoga-author {
 .online-recreats-overlay::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
+  z-index: 1;
   right: 0;
   height: 996px;
   background: linear-gradient(180deg, #F8F2EF 0%, rgba(253, 251, 250, 0.46) 60.6%, rgba(253, 251, 250, 0) 100%);
+  content: "";
+}
+
+.pt-530 {
+  padding-top: 530px;
+}
+
+.sd-youga-test-overlay {
+  position: relative;
+}
+.sd-youga-test-overlay > * {
+  position: relative;
+  z-index: 3;
+}
+.sd-youga-test-overlay::after {
+  position: absolute;
+  height: 1058px;
+  background-image: linear-gradient(180deg, #24193A 0%, rgba(32, 22, 52, 0) 53.31%, rgba(32, 22, 52, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 100%;
+  bottom: 85px;
+  left: 0;
   content: "";
 }
 
