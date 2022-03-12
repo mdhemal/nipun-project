@@ -139,6 +139,19 @@
         },
       });
 
+
+      var swiper = new Swiper(".sd-yoga-test-slider-active", {
+        slidesPerView: 2,
+        spaceBetween: 60,
+        grabCursor: true,
+        navigation: {
+		    nextEl: '.sd-yoga-navigation-next',
+		    prevEl: '.sd-yoga-navigation-prev',
+		  },
+      });
+
+      
+
     
 
     
