@@ -3526,6 +3526,7 @@ header.sd-header-trans-main {
   position: absolute;
   left: 0;
   bottom: 0;
+  right: 0;
 }
 .unique-persence-cloud-bottom-pos img {
   width: 100%;
@@ -3541,7 +3542,7 @@ header.sd-header-trans-main {
   color: #000000;
 }
 .sd-retreats-box-text {
-  ont-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -3568,6 +3569,58 @@ header.sd-header-trans-main {
 }
 .sd-theme-btn-gradient-link:hover {
   color: #fff;
+}
+
+.sd-retreats-box {
+  position: relative;
+  padding-top: 57px;
+  padding-bottom: 60px;
+}
+
+.sd-retreats-box::after {
+  content: "";
+  border-radius: 10px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.online-retreats-bg {
+  background: linear-gradient(180deg, #F8F2EF 0%, rgba(253, 251, 250, 0.46) 60.6%, rgba(253, 251, 250, 0) 100%);
+}
+
+.online-retreats-space {
+  margin-top: -19px;
+}
+
+.pb-395 {
+  padding-bottom: 395px;
+}
+
+.online-recreats-overlay {
+  position: relative;
+}
+.online-recreats-overlay > * {
+  position: relative;
+  z-index: 3;
+}
+.online-recreats-overlay::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 996px;
+  background: linear-gradient(180deg, #F8F2EF 0%, rgba(253, 251, 250, 0.46) 60.6%, rgba(253, 251, 250, 0) 100%);
+  content: "";
 }
 
 .sd-event-program-box {
