@@ -2,6 +2,7 @@
 @forward  './abstracts/variables';
 @forward  './abstracts/mixins';
 @forward  './abstracts/common';
+@forward './components/buttons';
 @forward './components/header';
 @forward './components/section-title';
 @forward './components/back-to-top';
@@ -17,4 +18,6 @@
 @forward './components/teaching-book';
 @forward './components/footer';
 @forward './components/event';
+@forward './components/input';
+@forward './components/contact-page';
 @forward './components/program';

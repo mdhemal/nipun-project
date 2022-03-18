@@ -49,6 +49,11 @@ CSS INDEX
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
  body {
     font-family: $cormorant;
@@ -371,12 +376,62 @@ input:focus::placeholder, textarea:focus::placeholder {
 .z-3 {
     z-index: 3;
 }
-.pb-220 {
-    padding-bottom: 220px;
+
+@media (min-width: 1200px) and (max-width:1600px) {
+    .container {
+        padding-left: 200px;
+    }
 }
-.pb-235 {
-    padding-bottom: 235px;
+
+// paddings
+$paddings: (165, 180, 220, 330, 235, 410, 530);
+
+@each $val in $paddings {
+    .py-#{$val}, .pt-#{$val} {
+        padding-top: #{$val}px;
+    }
+    .py-#{$val}, .pb-#{$val} {
+        padding-bottom: #{$val}px;
+    }
 }
-.pb-410 {
-    padding-bottom: 410px;
+// bootstrap breakpoints
+@media (min-width: 576px) {
+    @each $val in $paddings {
+        .py-sm-#{$val}, .pb-sm-#{$val} {
+            padding-bottom: #{$val}px;
+        }
+        .py-sm-#{$val}, .pt-sm-#{$val} {
+            padding-top: #{$val}px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    @each $val in $paddings {
+        .py-md-#{$val}, .pb-md-#{$val} {
+            padding-bottom: #{$val}px;
+        }
+        .py-md-#{$val}, .pt-md-#{$val} {
+            padding-top: #{$val}px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    @each $val in $paddings {
+        .py-lg-#{$val}, .pb-lg-#{$val} {
+            padding-bottom: #{$val}px;
+        }
+        .py-lg-#{$val}, .pt-lg-#{$val} {
+            padding-top: #{$val}px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    @each $val in $paddings {
+        .py-xl-#{$val}, .pb-xl-#{$val} {
+            padding-bottom: #{$val}px;
+        }
+        .py-xl-#{$val}, .pt-xl-#{$val} {
+            padding-top: #{$val}px;
+        }
+    }
 }

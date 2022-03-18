@@ -1,0 +1,16 @@
+.button {
+    border: none;
+
+    &--primary {
+        @extend .button;
+        height: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background: linear-gradient(97.01deg, #DEC361 8.45%, #886D2D 99.81%);
+        border-radius: 60px;
+        color: #fff;
+        font-family: "Quicksand", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

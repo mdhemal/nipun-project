@@ -125,34 +125,40 @@
 		}
 	});
 
-      var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
-        slidesPerView: 2,
-        spaceBetween: 120,
-        grabCursor: true,
-        navigation: {
-		    nextEl: '.sd-teaching-testimonial-navigation-next',
-		    prevEl: '.sd-teaching-testimonial-navigation-prev',
-		  },
-        pagination: {
-          el: ".sd-teaching-testimonial-pagination",
-          clickable: true,
-        },
-      });
+	var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
+		slidesPerView: 2,
+		spaceBetween: 120,
+		grabCursor: true,
+		navigation: {
+			nextEl: '.sd-teaching-testimonial-navigation-next',
+			prevEl: '.sd-teaching-testimonial-navigation-prev',
+		},
+		pagination: {
+			el: ".sd-teaching-testimonial-pagination",
+			clickable: true,
+		},
+	});
+
+	var swiper = new Swiper(".sd-yoga-test-slider-active", {
+		slidesPerView: 1,
+		spaceBetween: 60,
+		grabCursor: true,
+		navigation: {
+			nextEl: '.sd-yoga-navigation-next',
+			prevEl: '.sd-yoga-navigation-prev',
+		},
+		// responsive breakpoints
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			}
+		}
+	});
 
 
-      var swiper = new Swiper(".sd-yoga-test-slider-active", {
-        slidesPerView: 2,
-        spaceBetween: 60,
-        grabCursor: true,
-        navigation: {
-		    nextEl: '.sd-yoga-navigation-next',
-		    prevEl: '.sd-yoga-navigation-prev',
-		  },
-      });
 
-      
 
-    
 
-    
+
 })(jQuery);

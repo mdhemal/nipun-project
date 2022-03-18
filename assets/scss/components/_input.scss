@@ -1,0 +1,31 @@
+.theme-form {
+    &__label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    &__input {
+        background: #ffffff1a;
+        backdrop-filter: blur(140px);
+        color: #fff;
+        border: 3px solid #BCA972;
+        // border-image: linear-gradient(to right bottom, #938247, #EAD4A0);
+        font-family: "Quicksand";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        border-radius: 60px;
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        height: 60px;
+        padding: 0 30px;
+    }
+    &__textarea {
+        @extend .theme-form__input;
+        height: auto;
+        border-radius: 30px;
+        padding: 15px 30px;
+    }
+}
