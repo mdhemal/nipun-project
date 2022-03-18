@@ -577,6 +577,7 @@ img.sd-main-about-abs-img {
 
 .sd-yoga-content-img {
     flex: 0 0 415px;
+    position: relative;
     max-width: 415px
 }
 .sd-yoga-content-text {
@@ -591,9 +592,9 @@ img.sd-main-about-abs-img {
 }
 .sd-yoga-content-text {
     padding: 45px 30px;
-    border: 1px solid red;
     border-left: 0;
     border-radius: 0 10px 10px 0;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 a.sd-yoga-author {
@@ -620,4 +621,13 @@ a.sd-yoga-author {
 }
 .ml-430 {
     margin-left: 430px;
+}
+.sd-yoga-content-text-inner .sd-yoga-content-p {
+    color: #fff;
+}
+.sd-youga-space-top-reverce {
+    margin-top: -625px;
+}
+.sd-youga-bg-wrapper.bg-default {
+    background-position: bottom -61px right 0;
 }

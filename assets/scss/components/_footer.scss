@@ -56,3 +56,92 @@
         display: block;
     }
 }
+.sd-footer-grad-overlay {
+    position: relative;
+    &::after {
+        background: linear-gradient(180deg, rgba(36, 25, 58, 0) 0%, rgba(36, 25, 58, 0.65) 40.26%, rgba(36, 25, 58, 0.9) 74.02%, #24193A 100%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+    }
+    & > * {
+        position: relative;
+        z-index: 3;
+    }
+}
+.pt-330 {
+    padding-top: 330px;
+}
+.sd-footer-negative-space-2 {
+    margin-top: -90px;
+}
+.sd-subscribe-title-2 {
+    background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 65px;
+}
+.sd-subscribe-main-wrapp {
+    border: 0;
+    position: relative;
+    & > * {
+        position: relative;
+        z-index: 3;
+    }
+    &::after {
+        content: "";
+        border-radius: 10px;
+        transition: all 0.3s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2px;
+        background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+}
+.sd-subscribe-main-wrapp input {
+    border-radius: 60px;
+}
+.sd-subscribe-main-wrapp button {
+    border: 0;
+}
+.sd-subscribe-main-wrapp input, .sd-subscribe-main-wrapp textarea {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(140px);
+    color: #fff;
+    border-color: gold;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+    &::placeholder {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+
+}
+.footer-has-opacity-bg {
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(140px);
+}
