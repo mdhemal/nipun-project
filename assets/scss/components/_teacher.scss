@@ -1,0 +1,50 @@
+.sd-teaching {
+	&-icon {
+		&-1-1 {
+		    background: rgba(255, 255, 255, 0.8);
+		    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 55%);
+		    backdrop-filter: blur(100px);
+		    display: inline-block;
+		    width: 156px;
+		    height: 156px;
+		    border-radius: 50%;
+		    line-height: 156px;
+		}
+	}
+	&-title {
+		&-1-1 {
+		    font-family: 'Quicksand';
+		    font-style: normal;
+		    font-weight: 500;
+		    font-size: 18px;
+		    line-height: 22px;
+		    text-align: center;
+		    color: #000000;
+		    margin-bottom: 0;
+		}
+	}
+}
+.sd-teaching-section-title-1-1 {
+	font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    color: #000000;
+}
+.pb-390 {
+	padding-bottom: 390px;
+}
+.teaching-cloud-shapes-1-1 {
+	& .teaching-cloud-shapes-single-1-1:nth-child(1) {
+	    right: -115px;
+		top: 547px;
+	}
+	& .teaching-cloud-shapes-single-1-1:nth-child(2) {
+		left: -245px;
+		bottom: 250px;
+		& img {
+		}
+	}
+}

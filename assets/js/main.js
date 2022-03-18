@@ -101,6 +101,67 @@
 		},
 	});
 
+	var awaking = new Swiper(".awaking-active", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-awaking-main-thumb-navigation-next",
+			prevEl: ".sd-awaking-main-thumb-navigation-prev",
+		},
+		pagination: {
+			el: ".sd-awaking-main-pagination",
+			clickable: true,
+		},
+	});
+	var awaking2 = new Swiper(".awaking-active-2", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-awaking-main-thumb-navigation-next-2",
+			prevEl: ".sd-awaking-main-thumb-navigation-prev-2",
+		},
+		pagination: {
+			el: ".sd-awaking-main-pagination-3",
+			clickable: true,
+		},
+	});
+	var awaking2 = new Swiper(".awaking-active-3", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-awaking-main-thumb-navigation-next-3",
+			prevEl: ".sd-awaking-main-thumb-navigation-prev-3",
+		},
+		pagination: {
+			el: ".sd-awaking-main-pagination-3",
+			clickable: true,
+		},
+	});
+	var awaking2 = new Swiper(".evolution-active", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-evolution-main-thumb-navigation-next-3",
+			prevEl: ".sd-evolution-main-thumb-navigation-prev-3",
+		},
+		pagination: {
+			el: ".sd-evolution-main-pagination-3",
+			clickable: true,
+		},
+	});
+	
 
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
 		slidesPerView: 1,
