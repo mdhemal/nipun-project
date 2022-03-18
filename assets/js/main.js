@@ -131,7 +131,7 @@
 			clickable: true,
 		},
 	});
-	var awaking2 = new Swiper(".awaking-active-3", {
+	var awaking3 = new Swiper(".awaking-active-3", {
 		loop: true,
 		spaceBetween: 30,
 		slidesPerView: 3,
@@ -146,7 +146,37 @@
 			clickable: true,
 		},
 	});
-	var awaking2 = new Swiper(".evolution-active", {
+	var awaking4 = new Swiper(".awaking-active-4", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-awaking-main-thumb-navigation-next-4",
+			prevEl: ".sd-awaking-main-thumb-navigation-prev-4",
+		},
+		pagination: {
+			el: ".sd-awaking-main-pagination-4",
+			clickable: true,
+		},
+	});
+	var awaking4 = new Swiper(".awaking-active-5", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-awaking-main-thumb-navigation-next-5",
+			prevEl: ".sd-awaking-main-thumb-navigation-prev-5",
+		},
+		pagination: {
+			el: ".sd-awaking-main-pagination-5",
+			clickable: true,
+		},
+	});
+	var evolution = new Swiper(".evolution-active", {
 		loop: true,
 		spaceBetween: 30,
 		slidesPerView: 3,
@@ -158,6 +188,21 @@
 		},
 		pagination: {
 			el: ".sd-evolution-main-pagination-3",
+			clickable: true,
+		},
+	});
+	var evolution2 = new Swiper(".evolution-active-2", {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".sd-evolution-main-thumb-navigation-next-3-2",
+			prevEl: ".sd-evolution-main-thumb-navigation-prev-3-2",
+		},
+		pagination: {
+			el: ".sd-evolution-main-pagination-3-2",
 			clickable: true,
 		},
 	});

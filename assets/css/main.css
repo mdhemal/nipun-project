@@ -2752,6 +2752,36 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 9;
 }
 
+.rejuvenation-space-top-1-1 {
+  margin-top: -89px;
+  position: relative;
+  z-index: 9;
+}
+
+.has-article-section-wrap-top-bottom-overlay-1-1 {
+  position: relative;
+}
+.has-article-section-wrap-top-bottom-overlay-1-1::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 25, 58, 0) 0%, rgba(36, 25, 58, 0.38) 40.26%, rgba(36, 25, 58, 0.67) 74.02%, #24193A 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  content: "";
+}
+.has-article-section-wrap-top-bottom-overlay-1-1 > * {
+  position: relative;
+  z-index: 3;
+}
+
+.bg-bottom-cover {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
 .sd-about-title {
   font-family: "Cormorant", serif;
   font-style: normal;
@@ -3356,7 +3386,7 @@ header.sd-header-trans-main {
 }
 
 .sd-teaching-testimonial-wrapper .swiper-slide.swiper-slide-active {
-  width: calc(100% - 45%) !important;
+  width: 55% !important;
 }
 
 .sd_height_435 {
@@ -3574,7 +3604,7 @@ img.sd-main-about-abs-img {
 
 .sd-title-border-left:before {
   position: absolute;
-  right: calc(100% + 30px );
+  right: calc(100% + 30px);
   width: 900%;
   content: "";
   height: 2px;
