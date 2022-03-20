@@ -1,8 +1,8 @@
-
 @forward  './abstracts/variables';
 @forward  './abstracts/mixins';
 @forward  './abstracts/common';
 @forward './components/buttons';
+@forward './components/accordion';
 @forward './components/header';
 @forward './components/section-title';
 @forward './components/back-to-top';
@@ -20,4 +20,6 @@
 @forward './components/event';
 @forward './components/input';
 @forward './components/contact-page';
-@forward './components/program';
+@forward './components/hero';
+@forward './components/teacher';
+@forward './components/session';

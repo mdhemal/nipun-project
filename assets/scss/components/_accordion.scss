@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as *;
+
+.theme-accordion {
+    &__item {
+        margin-bottom: 20px;
+        backdrop-filter: blur(140px);
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__heading {
+        padding: 20px 40px;
+        background: #fff;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    &__button {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        text-align: left;
+    }
+    &__body {
+        font-family: $quicksand;
+        color: #000;
+        padding: 30px 60px;
+        font-size: 20px;
+
+        ul {
+            padding-left: 24px;
+        }
+
+        * {
+            font-family: $quicksand;
+            color: #000;
+        }
+    }
+
+    @media #{$xs} {
+        &__heading {
+            padding: 10px 16px;
+        }
+        &__body {
+            padding: 20px;
+            font-size: 16px;
+        }
+    }
+}

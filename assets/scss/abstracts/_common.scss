@@ -376,9 +376,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 .z-3 {
     z-index: 3;
 }
+.g-30 {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+}
 
 @media (min-width: 1200px) and (max-width:1600px) {
-    .container {
+    .container-pl {
         padding-left: 200px;
     }
 }
@@ -434,4 +438,7 @@ $paddings: (165, 180, 220, 330, 235, 410, 530);
             padding-top: #{$val}px;
         }
     }
+}
+.swiper-slide {
+    height: auto;
 }
