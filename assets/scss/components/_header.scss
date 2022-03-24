@@ -1,4 +1,7 @@
 @use '../abstracts/variables' as *;
+.mobile-menu-toggler {
+	color: #D6A635;
+}
 .sd-header {
 	&-logo {
 		& img {

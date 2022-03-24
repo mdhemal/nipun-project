@@ -54,6 +54,9 @@
         color: #FFFFFF;
         padding: 10px;
         display: block;
+        @media #{$xs} {
+            font-size: 13px;
+        }
     }
 }
 .sd-footer-grad-overlay {
@@ -75,6 +78,11 @@
 .pt-330 {
     padding-top: 330px;
 }
+@media (min-width: 500px) {
+    .pt-sm-330 {
+        padding-top: 330px;
+    }
+}
 .sd-footer-negative-space-2 {
     margin-top: -90px;
 }
@@ -86,7 +94,20 @@
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
-    line-height: 65px;
+    line-height: 1.2;
+
+    @media #{$lg} {
+        font-size: 55px;
+        br {
+            display: none;
+        }
+    }
+    @media #{$xs, $md} {
+        font-size: 34px;
+        br {
+            display: none;
+        }
+    }
 }
 .sd-subscribe-main-wrapp {
     border: 0;
@@ -127,19 +148,18 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 25px;
     /* identical to box height */
     color: #FFFFFF;
     &::placeholder {
         font-family: 'Quicksand';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
         /* identical to box height */
-        color: #FFFFFF;
+        color: inherit;
     }
-
+    @media #{$xs, $md} {
+        font-size: 16px;
+    }
 }
 .footer-has-opacity-bg {
     background: rgba(0, 0, 0, 0.08);

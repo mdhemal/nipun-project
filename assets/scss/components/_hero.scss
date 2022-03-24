@@ -10,6 +10,15 @@
 		    text-align: center;
 		    color: #D6AF3D;
 		    margin-bottom: 25px;
+
+			@media #{$lg} {
+				font-size: 55px;
+				line-height: 1.2;
+			}
+			@media #{$xs, $md} {
+				font-size: 33px;
+				line-height: 1.2;
+			}
 		}
 	}
 	&-text {
@@ -18,11 +27,15 @@
 		    font-style: normal;
 		    font-weight: 400;
 		    font-size: 17px;
-		    line-height: 21px;
+		    line-height: 1.2;
 		    text-align: center;
 		    color: #FFFFFF;
 		    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 		    margin-bottom: 50px;
+
+			@media #{$xs} {
+				font-size: 14px;
+			}
 		}
 	}
 }
@@ -69,4 +82,8 @@
     left: 0;
     bottom: -110px;
     right: 0;
+
+	@media #{$xs, $md, $lg} {
+		bottom: -20px;
+	}
 }

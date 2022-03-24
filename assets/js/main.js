@@ -104,7 +104,7 @@
 	var awaking = new Swiper(".awaking-active", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -115,11 +115,20 @@
 			el: ".sd-awaking-main-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var awaking2 = new Swiper(".awaking-active-2", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -130,11 +139,20 @@
 			el: ".sd-awaking-main-pagination-3",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var awaking3 = new Swiper(".awaking-active-3", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -145,11 +163,20 @@
 			el: ".sd-awaking-main-pagination-3",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var awaking4 = new Swiper(".awaking-active-4", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -160,11 +187,20 @@
 			el: ".sd-awaking-main-pagination-4",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var awaking4 = new Swiper(".awaking-active-5", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -175,11 +211,20 @@
 			el: ".sd-awaking-main-pagination-5",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var evolution = new Swiper(".evolution-active", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -190,11 +235,20 @@
 			el: ".sd-evolution-main-pagination-3",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
 	var evolution2 = new Swiper(".evolution-active-2", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 3,
+		slidesPerView: 1,
 		freeMode: true,
 		watchSlidesProgress: true,
 		navigation: {
@@ -205,8 +259,17 @@
 			el: ".sd-evolution-main-pagination-3-2",
 			clickable: true,
 		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+				navigation: false,
+			},
+		}
 	});
-	
+
 
 	var teachingBookListActive = new Swiper(".teaching-book-list-active", {
 		slidesPerView: 1,
@@ -231,34 +294,40 @@
 		}
 	});
 
-      var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
-        slidesPerView: 2,
-        spaceBetween: 120,
-        grabCursor: true,
-        navigation: {
-		    nextEl: '.sd-teaching-testimonial-navigation-next',
-		    prevEl: '.sd-teaching-testimonial-navigation-prev',
-		  },
-        pagination: {
-          el: ".sd-teaching-testimonial-pagination",
-          clickable: true,
-        },
-      });
+	var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
+		slidesPerView: 2,
+		spaceBetween: 120,
+		grabCursor: true,
+		navigation: {
+			nextEl: '.sd-teaching-testimonial-navigation-next',
+			prevEl: '.sd-teaching-testimonial-navigation-prev',
+		},
+		pagination: {
+			el: ".sd-teaching-testimonial-pagination",
+			clickable: true,
+		},
+	});
+
+	var swiper = new Swiper(".sd-yoga-test-slider-active", {
+		slidesPerView: 1,
+		spaceBetween: 60,
+		grabCursor: true,
+		navigation: {
+			nextEl: '.sd-yoga-navigation-next',
+			prevEl: '.sd-yoga-navigation-prev',
+		},
+		// responsive breakpoints
+		breakpoints: {
+			992: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			}
+		}
+	});
 
 
-      var swiper = new Swiper(".sd-yoga-test-slider-active", {
-        slidesPerView: 2,
-        spaceBetween: 60,
-        grabCursor: true,
-        navigation: {
-		    nextEl: '.sd-yoga-navigation-next',
-		    prevEl: '.sd-yoga-navigation-prev',
-		  },
-      });
 
-      
 
-    
 
-    
+
 })(jQuery);

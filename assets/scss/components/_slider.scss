@@ -81,13 +81,13 @@
     color: #fff;
     height: 60px;
     border: 0;
-    display: inline-block;
-    text-align: center;
     padding: 0 15px;
     font-family: "Quicksand", sans-serif;
     min-width: 237px;
     text-decoration: none;
-    line-height: 60px;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
     transition: all 0.3s;
     background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
     color: transparent;
@@ -105,6 +105,11 @@
     &:hover {
     	color: #fff;
     }
+
+	@media #{$xs} {
+		height: 50px;
+		min-width: 198px;
+	}
 }
 
 .sd-rounded-btn::before {

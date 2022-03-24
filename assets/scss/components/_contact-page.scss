@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+
+.contact-full-bg {
+    background-size: 100% 100%;
+    margin-top:-420px;
+    padding-top: 420px;
+    position: relative;
+    z-index: 1;
+
+    @media #{$xs} {
+        background-size: cover;
+        margin-top: -340px;
+        padding-top: 340px;
+    }
+}

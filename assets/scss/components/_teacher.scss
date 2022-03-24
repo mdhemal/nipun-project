@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .sd-teaching {
 	&-icon {
 		&-1-1 {
@@ -8,7 +10,18 @@
 		    width: 156px;
 		    height: 156px;
 		    border-radius: 50%;
-		    line-height: 156px;
+		    display: inline-flex;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+				max-width: 50%;
+			}
+
+			@media #{$xs} {
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 	&-title {
@@ -17,10 +30,14 @@
 		    font-style: normal;
 		    font-weight: 500;
 		    font-size: 18px;
-		    line-height: 22px;
+		    line-height: 1.2;
 		    text-align: center;
 		    color: #000000;
 		    margin-bottom: 0;
+
+			@media #{$xs} {
+				font-size: 16px;
+			}
 		}
 	}
 }
@@ -29,9 +46,12 @@
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
-    line-height: 65px;
+    line-height: 1.2;
     text-align: center;
     color: #000000;
+	@media #{$xs, $md} {
+		font-size: 33px;
+	}
 }
 .pb-390 {
 	padding-bottom: 390px;

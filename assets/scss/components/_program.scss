@@ -7,6 +7,16 @@
 		padding: 60px;
 		text-align: center;
 		position: relative;
+		max-width: 770px;
+		margin: auto;
+
+		@media #{$md} {
+			padding: 45px;
+		}
+		@media #{$xs} {
+			padding: 25px;
+		}
+		
 		z-index: 3;
 		& > * {
 			position: relative;
@@ -34,21 +44,32 @@
 		font-style: normal;
 		font-weight: 500;
 		font-size: 42px;
-		line-height: 51px;
+		line-height: 1.2;
 		text-align: center;
 		background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-fill-color: transparent;
+		
+		@media #{$md} {
+			font-size: 36px;
+		}
+		@media #{$xxs} {
+			font-size: 24px;
+		}
 	}
 	&-text {
 	    font-family: $quicksand;
 	    font-style: normal;
 	    font-weight: 400;
 	    font-size: 17px;
-	    line-height: 21px;
+	    line-height: 1.2;
 	    color: #FFFFFF;
+
+		@media #{$xs, $md} {
+			font-size: 14px;
+		}
 	}
 	&-sm {
 		&-title {
@@ -59,6 +80,10 @@
 		    line-height: 26px;
 		    text-align: center;
 		    color: #FFFFFF;
+
+			@media #{$xs, $md} {
+				font-size: 16px;
+			}
 		}
 	}
 	&-session {
@@ -89,7 +114,7 @@
 					    font-weight: 500;
 					    font-size: 21px;
 					    margin-bottom: 0;
-					    line-height: 26px;
+					    line-height: 1.1;
 					    text-align: center;
 					    display: block;
 				        padding-bottom: 23px;
@@ -105,6 +130,9 @@
 				        	left: 50%;
 				        	transform: translateX(-50%);
 				        }
+						@media #{$xs} {
+							font-size: 18px;
+						}
 					}
 					&-subtitle {
 					    font-family: $quicksand;
@@ -115,6 +143,10 @@
 					    text-align: center;
 					    color: #FFFFFF;
 					    margin-bottom: 0;
+
+						@media #{$xs} {
+							font-size: 14px;
+						}
 					}
 				}
 			}
@@ -131,7 +163,14 @@
 	    content: "";
 	    width: 1px;
 	    background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+<<<<<<< HEAD
 	    z-index: 9;
+=======
+
+		@media #{$xs, $md, $lg} {
+			display: none;
+		}
+>>>>>>> 6697b324b34e5fe3a250cbd41cad3cef35a8dbcb
 	}
 }
 .sd-has-section-before.before-none::after {
