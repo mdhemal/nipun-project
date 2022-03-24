@@ -1942,6 +1942,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   border-radius: 50%;
   font-family: Quicksand;
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 105px;
   font-weight: 700;
@@ -3226,6 +3227,12 @@ header.sd-header-trans-main {
   font-weight: 500;
   color: #fff;
   line-height: 90px;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sd-slider-main-text p {
@@ -3503,18 +3510,19 @@ a.sd-slide-btn {
 }
 
 .sd-about-main-img:before {
-  position: absolute;
-  left: -33px;
-  top: -57px;
   width: calc(100% + 90px);
   height: 100%;
   content: "";
-  border-style: solid;
-  border-color: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
+  position: absolute;
+  top: -57px;
+  left: -33px;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  background: linear-gradient(99.09deg, #BF9C1E 1.19%, #FFF4D1 44.3%, #D6A635 90.37%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  pointer-events: none;
 }
 
 .sd-about-main-img {
@@ -3610,7 +3618,8 @@ img.sd-main-about-abs-img {
   height: 2px;
   padding: 0 20px;
   top: 50px;
-  background-color: red;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  z-index: 3;
 }
 
 .sd-has-title-before-padding {
@@ -3628,10 +3637,11 @@ img.sd-main-about-abs-img {
 
 .sd-has-section-before.sd-book-wrapper-area {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .sd-has-section-before.sd-book-wrapper-area:after {
+  background-position: top right;
   position: absolute;
   left: 0;
   top: 0;
@@ -3640,6 +3650,8 @@ img.sd-main-about-abs-img {
   content: "";
   z-index: -1;
   background-image: url(../img/book-main/book-main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .ml-300 {
@@ -3662,7 +3674,7 @@ img.sd-main-about-abs-img {
   width: 100%;
   height: 50%;
   content: "";
-  z-index: 1;
+  z-index: 2;
   background: linear-gradient(180deg, rgba(246, 241, 238, 0) 24.09%, #F6F1EE 99.9%);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
@@ -3741,6 +3753,270 @@ a.sd-yoga-author {
 
 .sd-youga-bg-wrapper.bg-default {
   background-position: bottom -61px right 0;
+}
+
+.sd-slider-main-content-special .mySwiper.sd-slider-main-thumb-slider .swiper-slide {
+  border-radius: 20px 20px 20px 0;
+  overflow: hidden;
+}
+
+.sd-book-knowledge-area-main.sd-upper-book-bg {
+  position: relative;
+  z-index: 2;
+}
+
+.container-fluid.overlay-short-right {
+  position: relative;
+}
+.container-fluid.overlay-short-right:before {
+  position: absolute;
+  right: 40px;
+  width: 100%;
+  height: 700px;
+  top: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(246, 241, 238, 0) 24.09%, #F6F1EE 99.9%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  border-bottom-right-radius: 50px;
+}
+
+.sd-rounded-btn.h-45 {
+  height: 45px;
+  line-height: 45px;
+  min-width: 175px;
+}
+
+.sd-handcover-book-content-box-wrap.pr-150 {
+  padding-right: 150px;
+}
+
+.teaching-book-bg-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+.teaching-book-bg-bottom:before {
+  position: absolute;
+  left: 0;
+  top: -16px;
+  width: 100%;
+  height: 835px;
+  content: "";
+  background: linear-gradient(180deg, #1B1733 0%, rgba(27, 23, 51, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.sd-book-knowledge-area-main.pt-90 {
+  background: #F6F1EE;
+}
+
+.container-fluid.custom1430 {
+  max-width: 1410px;
+  margin: 0 auto;
+}
+
+.sd-main-program-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.sd-event-program-box.sd-main-program-box {
+  padding: 45px;
+  padding-top: 35px;
+}
+
+.sd-main-program-box .sd-event-program-img {
+  position: relative;
+  z-index: 1;
+}
+
+.sd-main-program-box .sd-online-tag {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: inline-block;
+  height: 45px;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  line-height: 45px;
+  padding: 0 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0 6px 6px 0;
+}
+
+.sd-main-program-box .sd-event-program-img img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.ptest-overlay-upper {
+  position: relative;
+}
+
+.ptest-overlay-upper:before {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  height: 870px;
+  width: 100%;
+  content: "";
+  background: linear-gradient(180deg, #1B1733 0%, rgba(21, 23, 56, 0.5) 52.04%, rgba(10, 23, 64, 0) 100%);
+  z-index: 3;
+}
+
+.ptest-overlay-upper > * {
+  position: relative;
+  z-index: 9;
+}
+
+.sd-main-program-btn {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cloud-bottom-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.cloud-bottom-bg:before {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  width: 100%;
+  height: 350px;
+  background-image: url(../img/program-main/cloud-bottom.png);
+  content: "";
+  z-index: -1;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.pb-260 {
+  padding-bottom: 260px;
+}
+
+img.cloud-bottom-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.sd-yoga-beforebg {
+  position: relative;
+  z-index: 3;
+}
+
+.sd-yoga-beforebg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 720px;
+  content: "";
+  background: linear-gradient(180deg, #F7F3EF 0%, rgba(253, 251, 250, 0.46) 60.6%, rgba(253, 251, 250, 0) 100%);
+  z-index: 1;
+}
+
+.sd-yoga-test-area {
+  position: relative;
+  z-index: 2;
+}
+
+.sd-shaktipath-box-inner {
+  width: 1166px;
+  padding: 140px 515px 85px 115px;
+  position: relative;
+  border: 1px solid #B59A48;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+}
+
+.sd-shaktipath-box-tag {
+  height: 58px;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 58px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  background: linear-gradient(-117.43deg, #938247 19.12%, #EAD4A0 89.17%);
+  border-radius: 0 6px 6px 0;
+}
+
+.sd-shaktipath-title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.sd-shaktipath-box-content p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.sd-shaktipath-box-img {
+  position: absolute;
+  right: -265px;
+  bottom: -37px;
+  border-radius: 10px;
+  width: 650px;
+}
+
+.sd-shaktipath-box-img:before {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 193px;
+  height: 173px;
+  border: 1px solid #B59A48;
+  z-index: 2;
+  content: "";
+  z-index: -1;
+}
+
+.sd-shaktipath-box-img img {
+  border-radius: 15px;
+}
+
+.sd-has-section-before.before-none::before {
+  display: none;
+}
+
+.sd-jt-wbg.bg-default {
+  position: relative;
+}
+
+.sd-jt-wbg.bg-default:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(180deg, #1B1733 0%, rgba(28, 24, 52, 0.97) 33.27%, rgba(29, 25, 52, 0.62) 67.99%, rgba(30, 26, 53, 0.26) 100%);
+}
+
+.sd-has-section-before.before-none.test-bottom_bg {
+  background-size: cover;
+  background-position: center center;
 }
 
 .sd-teaching-book-container {
@@ -4435,6 +4711,31 @@ a.sd-yoga-author {
   content: "";
   width: 1px;
   background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  z-index: 9;
+}
+
+.sd-has-section-before.before-none::after {
+  position: absolute;
+  left: 0;
+  top: -550px;
+  width: 100%;
+  height: 155%;
+  background: linear-gradient(180deg, #1B1733 0%, rgba(27, 23, 51, 0.88) 18.02%, rgba(27, 23, 51, 0.16) 60.6%, rgba(27, 23, 51, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  content: "";
+}
+
+.sd-has-section-before.before-none {
+  position: relative;
+}
+
+.sd-has-section-before.before-none > * {
+  z-index: 9;
+}
+
+.sd-shaktipath-area {
+  position: relative;
+  z-index: 3;
 }
 
 .sd-article-hero-title-1-1 {

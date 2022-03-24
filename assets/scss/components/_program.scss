@@ -131,5 +131,28 @@
 	    content: "";
 	    width: 1px;
 	    background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+	    z-index: 9;
 	}
+}
+.sd-has-section-before.before-none::after {
+    position: absolute;
+    left: 0;
+    top: -550px;
+    width: 100%;
+    height: 155%;
+    background: linear-gradient(180deg, #1B1733 0%, rgba(27, 23, 51, 0.88) 18.02%, rgba(27, 23, 51, 0.16) 60.6%, rgba(27, 23, 51, 0) 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    content: "";
+}
+
+.sd-has-section-before.before-none {
+    position: relative;
+}
+
+.sd-has-section-before.before-none > * {
+    z-index: 9;
+}
+.sd-shaktipath-area {
+    position: relative;
+    z-index: 3;
 }
