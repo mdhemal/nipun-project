@@ -163,14 +163,10 @@
 	    content: "";
 	    width: 1px;
 	    background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
-<<<<<<< HEAD
 	    z-index: 9;
-=======
-
 		@media #{$xs, $md, $lg} {
 			display: none;
 		}
->>>>>>> 6697b324b34e5fe3a250cbd41cad3cef35a8dbcb
 	}
 }
 .sd-has-section-before.before-none::after {

@@ -18,13 +18,8 @@
 		    font-style: normal;
 		    font-weight: 500;
 		    font-size: 54px;
-<<<<<<< HEAD
 		    line-height: 65px;
-		    
-=======
 		    line-height: 1.2;
->>>>>>> 6697b324b34e5fe3a250cbd41cad3cef35a8dbcb
-
 			@media #{$xs, $md} {
 				font-size: 33px;
 			}
@@ -82,7 +77,6 @@
 		}
 	}
 	&-item-count {
-<<<<<<< HEAD
 		    display: inline-block;
 		    width: 80px;
 		    height: 80px;
@@ -117,7 +111,6 @@
 		    	border: 1px solid #907531;
 		    	border-radius: 50%;
 		    }
-=======
 		width: 80px;
 		height: 80px;
 		background: rgba(255, 255, 255, 0.01);
@@ -155,7 +148,6 @@
 		@media #{$xs, $md, $lg} {
 			display: none;
 		}
->>>>>>> 6697b324b34e5fe3a250cbd41cad3cef35a8dbcb
 	}
 }
 

@@ -689,7 +689,6 @@ a.sd-yoga-author {
     background-position: bottom -61px right 0;
 }
 
-<<<<<<< HEAD
 .sd-slider-main-content-special .mySwiper.sd-slider-main-thumb-slider .swiper-slide {
     border-radius: 20px 20px 20px 0;
     overflow: hidden;
@@ -937,10 +936,9 @@ img.cloud-bottom-img {
 .sd-has-section-before.before-none.test-bottom_bg {
     background-size: cover;
     background-position: center center;
-=======
-@media #{$xs, $md} {
-    .sd-yoga-content-wrapp {
-        flex-direction: column;
+    @media #{$xs, $md} {
+        .sd-yoga-content-wrapp {
+            flex-direction: column;
+        }
     }
->>>>>>> 6697b324b34e5fe3a250cbd41cad3cef35a8dbcb
 }
