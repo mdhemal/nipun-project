@@ -4327,7 +4327,11 @@ a.sd-yoga-author {
 
 .sd-event-program-box.sd-main-program-box {
   padding: 45px;
+  border-radius: 30px;
+  border: 1px solid #C19E23;
   padding-top: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
 }
 
 .sd-main-program-box .sd-event-program-img {
@@ -4527,6 +4531,173 @@ img.cloud-bottom-img {
   }
 }
 
+.sd-event-program-session-item-box-sm {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(45px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.sd-event-program-session-item-box-sm-title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  /* golden */
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.sd-event-program-session-item-box-sm-subtitle {
+  /* Paragraph */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+p.sd-event-program-session-item-box-sm-title {
+  position: relative;
+}
+
+p.sd-event-program-session-item-box-sm-title::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  height: 1px;
+  width: 38px;
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+}
+
+.sd-event-program-title {
+  /* H4 */
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  /* golden */
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.sd-event-program-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.sd-event-program-content .sd-event-program-action-link {
+  margin-top: 70px;
+}
+
+.sd-event-program-img span.sd-online-tag {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  line-height: 47px;
+}
+
+.sd-yoga-test-wrapper .sd-yoga-content-text-inner p {
+  /* Paragraph */
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.sd-yoga-content-text {
+  border: 1px solid #C7B98F;
+}
+
+.sd-has-section-before.before-none.test-bottom_bg::after {
+  background: linear-gradient(180deg, #1B1733 0%, rgba(27, 23, 51, 0.88) 18.02%, rgba(27, 23, 51, 0.16) 60.6%, rgba(27, 23, 51, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.sd-shaktipath-area {
+  position: relative;
+  z-index: 9;
+}
+
+.sd-teaching-testimonial-area .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(117.43deg, #938247 -19.12%, #EAD4A0 89.17%);
+  transform: rotate(-90deg);
+  position: relative;
+}
+
+.sd-teaching-testimonial-area .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.no-before::before {
+  display: none !important;
+}
+
+.teaching-book-area .sd-ebook-title {
+  position: relative;
+  z-index: 3;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-area.py-4.py-lg-0 {
+  width: 100%;
+}
+
+.programs-area.sd-has-section-before.mb-180 {
+  position: relative;
+}
+
+.upcomming-website-area.sd-has-section-before.pb-100.pb-lg-235 {
+  position: relative;
+}
+
 .sd-teaching-book-container {
   border-radius: 40px 0px 0px 40px;
   background: rgba(255, 255, 255, 0.1);
@@ -4615,10 +4786,45 @@ img.cloud-bottom-img {
   float: right;
   padding-right: 60px;
   padding-top: 30px;
+  position: relative;
 }
 
 .pb-240 {
   padding-bottom: 240px;
+}
+
+.sd-event-program-box.style-2 {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(140px);
+  border-radius: 20px;
+  color: #fff;
+  padding: 60px 40px;
+}
+.sd-event-program-box.style-2 .sd-event-program-sm-title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sd-event-program-box.style-2 .sd-event-program-session-item-title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 30px;
+}
+.sd-event-program-box.style-2 .sd-event-program-session-item-box-sm-title {
+  margin-bottom: 20px;
+}
+.sd-event-program-box.style-2 p.sd-event-program-session-item-box-sm-title::after {
+  bottom: -11px;
 }
 
 .footer-menu.text-center ul li {

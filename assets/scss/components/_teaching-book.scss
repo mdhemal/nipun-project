@@ -74,10 +74,48 @@
 	}
 }
 .sd-teaching-arrow-float {
-	float: right;
-	padding-right: 60px;
-	padding-top: 30px;
+    float: right;
+    padding-right: 60px;
+    padding-top: 30px;
+    position: relative;
 }
 .pb-240 {
 	padding-bottom: 240px;
+}
+
+
+
+// style 2
+.sd-event-program-box.style-2 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(140px);
+    border-radius: 20px;
+    color: #fff;
+    padding: 60px 40px;
+	.sd-event-program-sm-title {
+	    font-family: 'Quicksand';
+	    font-style: normal;
+	    font-weight: 500;
+	    font-size: 21px;
+	    line-height: 26px;
+	    text-align: center;
+	    color: #FFFFFF;
+	}
+	.sd-event-program-session-item-title {
+	    font-family: 'Quicksand';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 17px;
+	    line-height: 21px;
+	    text-align: center;
+	    color: #FFFFFF;
+	    padding: 0 30px;
+	}
+	.sd-event-program-session-item-box-sm-title {
+	    margin-bottom: 20px;
+	}
+	p.sd-event-program-session-item-box-sm-title::after {
+	    bottom: -11px;
+	}
 }
