@@ -166,23 +166,6 @@ label {
 	font-size: 14px;
 	font-weight: 400;
 }
-*::-moz-selection {
-	background-color: #1a1a1a;
-	color: #fff;
-	text-shadow: none;
-}
-::-moz-selection {
-	background-color: #1a1a1a;
-	color: #fff;
-	text-shadow: none;
-}
-::selection {
-	background-color: #1a1a1a;
-	color: #fff;
-	text-shadow: none;
-}
-
-
 
 /* <<<<<<<    Input Placeholder   >>>>>>>>> */
 
@@ -372,9 +355,6 @@ input:focus::placeholder, textarea:focus::placeholder {
         max-width: 1380px;
     }
 }
-.row { 
- --bs-gutter-x: 30px;
-}
 
 .z-3 {
     z-index: 3;
@@ -443,5 +423,14 @@ $paddings: (165, 180, 220, 330, 235, 410, 530);
     }
 }
 .swiper-slide {
-    height: auto;
+    width: 100%;
+    height: 100%;
+}
+.swiper-container {
+    overflow: hidden;
+}
+
+// banner-image-slider
+.banner-image-slider {
+    overflow: hidden;
 }

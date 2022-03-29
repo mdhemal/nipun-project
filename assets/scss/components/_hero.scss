@@ -6,7 +6,7 @@
 		    font-style: normal;
 		    font-weight: 500;
 		    font-size: 84px;
-		    line-height: 102px;
+		    line-height: 1.2;
 		    text-align: center;
 		    color: #D6AF3D;
 		    margin-bottom: 25px;
@@ -87,6 +87,11 @@
 		bottom: -20px;
 	}
 }
+@media (min-width: 992px) {
+		.pb-lg-290 {
+			padding-bottom: 290px;
+		}
+	}
 .sd-stream-hero-title-1 {
     font-family: 'Cormorant';
     font-style: normal;

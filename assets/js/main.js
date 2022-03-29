@@ -77,12 +77,10 @@
 		]
 	});
 
-	var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper(".sd-slider-main-thumb-slider", {
 		loop: true,
 		spaceBetween: 30,
-		slidesPerView: 2,
-		freeMode: true,
-		watchSlidesProgress: true,
+		slidesPerView: 1,
 		navigation: {
 			nextEl: ".sd-slider-main-thumb-navigation-next",
 			prevEl: ".sd-slider-main-thumb-navigation-prev",
@@ -91,6 +89,17 @@
 			el: ".sd-slider-main-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			992: {
+				slidesPerView: 3,
+			},
+			768: {
+
+			},
+			568: {
+				slidesPerView: 2,
+			},
+		}
 	});
 	var swiper2 = new Swiper(".mySwiper2", {
 		loop: true,
@@ -286,7 +295,6 @@
 		breakpoints: {
 			768: {
 				slidesPerView: 6,
-				spaceBetween: 45,
 			},
 			578: {
 				slidesPerView: 3,
@@ -295,8 +303,8 @@
 	});
 
 	var swiper = new Swiper(".sd-teaching-testimonial-slider-active", {
-		slidesPerView: 2,
-		spaceBetween: 120,
+		slidesPerView: 1,
+		spaceBetween: 20,
 		grabCursor: true,
 		navigation: {
 			nextEl: '.sd-teaching-testimonial-navigation-next',
@@ -306,6 +314,18 @@
 			el: ".sd-teaching-testimonial-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			1400: {
+				spaceBetween: 120,
+			},
+			992: {
+				spaceBetween: 60,
+			},
+			768: {
+				spaceBetween: 40,
+				slidesPerView: 2,
+			}
+		}
 	});
 
 	var swiper = new Swiper(".sd-yoga-test-slider-active", {
