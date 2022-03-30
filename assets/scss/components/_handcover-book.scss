@@ -12,6 +12,13 @@
       flex-direction: column;
     }
   }
+  &-left {
+	max-width: 77%;
+	margin-left: auto;
+	@media #{$xs, $md} {
+		max-width: 100%;
+	}
+  }
   &-box {
     overflow: hidden;
     position: relative;

@@ -3381,6 +3381,15 @@ input:focus::placeholder, textarea:focus::placeholder {
     flex-direction: column;
   }
 }
+.sd-handcover-book-left {
+  max-width: 77%;
+  margin-left: auto;
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .sd-handcover-book-left {
+    max-width: 100%;
+  }
+}
 .sd-handcover-book-box {
   overflow: hidden;
   position: relative;
