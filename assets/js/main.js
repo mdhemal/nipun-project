@@ -345,9 +345,14 @@
 		}
 	});
 
-
-
-
-
+	// toggle navbar
+	$('.mobile-menu-open').on('click', function () {
+		$('.mobile-nav').addClass('active');
+		$('.overlay').addClass('active');
+	});
+	$('.mobile-nav__close, .overlay').on('click', function () {
+		$('.mobile-nav').removeClass('active');
+		$('.overlay').removeClass('active');
+	});
 
 })(jQuery);

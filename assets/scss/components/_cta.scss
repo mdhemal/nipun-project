@@ -1,10 +1,37 @@
+@use '../abstracts/variables' as *;
+
 .side-cta-img-width-1 {
-    max-width: calc(100% - 375px);
+    max-width: 100%;
     margin-left: auto;
+    padding: 0 15px;
+
+    @media #{$over} {
+        padding: 0;
+        max-width: calc(100% - 375px);
+    }
+    @media #{$xxl, $xxxl} {
+        max-width: calc(100% - 175px);
+        
+    }
 }
 .sd-side-cta-img-1-1 {
+    margin-right: 60px;
+    margin-top: 20px;
     float: left;
     position: relative;
+    img {
+        width: 100%;
+    }
+
+    @media #{$xs, $md, $lg, $xl, $xxl, $xxxl} {
+        margin-right: 20px;
+        margin-top: 0;
+    }
+    @media #{$xs, $md, $lg} {
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .sd-side-cta-img-1-1::after {
@@ -17,6 +44,10 @@
     left: -50px;
     border: 1px solid #BF9C1E;
     bottom: -50px;
+
+    @media #{$xs, $md, $lg, $xl} {
+        display: none;
+    }
 }
 
 .sd-side-cta-img-1-1 > * {
@@ -28,7 +59,17 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(45px);
     border: 1px solid #BF9C1E;
-    padding: 65px 70px;
+    padding: 70px;
+
+    @media #{$xs, $md, $lg, $xl} {
+        padding: 30px;
+    }
+    @media #{$xs, $md, $lg} {
+        border-radius: 20px;
+    }
+    @media #{$xs} {
+        padding: 15px;
+    }
 }
 
 .sd-side-content-1-1 p {
@@ -38,8 +79,15 @@
     font-weight: 400;
     margin-bottom: 0;
     font-size: 17px;
-    line-height: 21px;
+    line-height: 1.2;
     color: #FFFFFF;
+
+    @media #{$xs, $md, $lg} {
+        max-width: 100%;
+    }
+    @media #{$xs} {
+        font-size: 14px;
+    }
 }
 .sd-cta-bottom-text-1-1 {
     font-family: 'Cormorant';

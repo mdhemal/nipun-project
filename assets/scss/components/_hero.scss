@@ -97,8 +97,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 84px;
-    line-height: 102px;
-/* identical to box height */
+    line-height: 1.2;
     text-align: center;
     background: linear-gradient(100.73deg, #BF9C1E -63.54%, #FFFBEE 44.33%, #D6A635 128.42%);
     -webkit-background-clip: text;
@@ -107,6 +106,12 @@
     margin-bottom: 25px;
     text-fill-color: transparent;
     text-shadow: 0px 4px 59px rgba(0, 0, 0, 0.72);
+	@media #{$md} {
+		font-size: 55px;
+	}
+	@media #{$xs} {
+		font-size: 34px;
+	}
 }
 
 .sd-stream-hero-content-1 {/* Caption Medium */
@@ -114,11 +119,15 @@
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.1;
     margin-bottom: 74px;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 14px #000000;
+	@media #{$sm, $md} {
+		font-size: 18px;
+		margin-bottom: 34px;
+	}
 }
 .sd-stream-hero-link-1 {
     height: 59px;

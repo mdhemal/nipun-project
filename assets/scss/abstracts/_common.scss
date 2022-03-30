@@ -434,3 +434,14 @@ $paddings: (165, 180, 220, 330, 235, 410, 530);
 .banner-image-slider {
     overflow: hidden;
 }
+
+.overlay {
+    z-index: 9;
+    opacity: 1;
+    cursor: auto;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
